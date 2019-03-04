@@ -33,7 +33,7 @@ bindsym $mod+Shift+r restart
 # #--- Start Applications---# #
 
 # Start a terminal
-bindsym $mod+Return exec st
+bindsym $mod+Return exec --no-startup-id st
 
 # Start ranger
 bindsym $mod+r exec --no-startup-id $term -e $file_m
