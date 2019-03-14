@@ -67,6 +67,7 @@ plugins=(git zsh-autosuggestions)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
+export VISUAL=vim
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -92,6 +93,7 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 
 alias p="sudo pacman"
+alias dotf="/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -100,6 +102,3 @@ alias p="sudo pacman"
 #powerline-daemon -q
 #. /usr/lib/python3.7/site-packages/powerline/bindings/zsh/powerline.zsh
 
-
-
-alias dotf="/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"
