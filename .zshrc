@@ -95,10 +95,7 @@ export VISUAL=vim
 alias p="sudo pacman"
 alias dotf="/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"
 
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-
 #powerline-daemon -q
 #. /usr/lib/python3.7/site-packages/powerline/bindings/zsh/powerline.zsh
 
+[ -f "$HOME/.config/aliasrc" ] && source "$HOME/.config/aliasrc"
