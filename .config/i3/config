@@ -42,6 +42,9 @@ bindsym $mod+d exec --no-startup-id dmenu_recency
 # Launch categorized menu
 bindsym $mod+z exec --no-startup-id morc_menu
 
+# Take a screenshot
+bindsym $mod+s exec --no-startup-id flameshot gui
+
 bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
 bindsym $mod+F3 exec pcmanfm
 bindsym $mod+Shift+F3 exec gksu pcmanfm
@@ -94,6 +97,12 @@ bindsym $mod+Shift+h move left
 bindsym $mod+Shift+j move down
 bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
+
+bindsym $mod+y exec --no-startup-id i3resize left
+bindsym $mod+u exec --no-startup-id i3resize down
+bindsym $mod+i exec --no-startup-id i3resize up
+bindsym $mod+o exec --no-startup-id i3resize right
+
 
 # Workspace back and forth (with/without active container)
 workspace_auto_back_and_forth yes
