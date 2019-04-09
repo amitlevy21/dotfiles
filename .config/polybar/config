@@ -53,7 +53,7 @@ module-margin-right = 2
 
 font-0 = fixed:pixelsize=10;1
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
-font-2 = siji:pixelsize=10;1
+font-2 = "Wuncon Siji:pixelsize=10;1"
 
 modules-left = i3
 modules-center = xwindow
@@ -63,14 +63,10 @@ tray-position = right
 tray-padding = 4
 tray-maxsize = 16
 
-;wm-restack = bspwm
 wm-restack = i3
 
-;scroll-up = bspwm-desknext
-;scroll-down = bspwm-deskprev
-
-;scroll-up = i3wm-wsnext
-;scroll-down = i3wm-wsprev
+scroll-up = i3wm-wsnext
+scroll-down = i3wm-wsprev
 
 ;[module/filesystem]
 ;type = internal/fs
@@ -84,8 +80,6 @@ wm-restack = i3
 
 ; Separator in between workspaces
 ; label-separator = |
-
-
 
 [module/i3]
 type = internal/i3
@@ -137,28 +131,6 @@ label = %percentage_used%%
 format-prefix = " "
 format-prefix-foreground = #666
 
-[module/wlan]
-type = internal/network
-interface = eno1
-interval = 3.0
-
-format-connected = <ramp-signal> <label-connected>
-format-connected-underline = #9f78e1
-label-connected = %essid%
-
-format-disconnected =
-;format-disconnected = <label-disconnected>
-;format-disconnected-underline = ${self.format-connected-underline}
-;label-disconnected = %ifname% disconnected
-;label-disconnected-foreground = ${colors.foreground-alt}
-
-ramp-signal-0 = 
-ramp-signal-1 = 
-ramp-signal-2 = 
-ramp-signal-3 = 
-ramp-signal-4 = 
-ramp-signal-foreground = #666
-
 [module/wifi]
 type = internal/network
 interface = net1
@@ -183,22 +155,6 @@ ramp-signal-2 = 
 ramp-signal-3 = 
 ramp-signal-4 = 
 ramp-signal-foreground = #666
-
-[module/eth]
-type = internal/network
-interface = eno1
-interval = 3.0
-
-format-connected-underline = #55aa55
-format-connected-prefix = " "
-format-connected-prefix-foreground = #666
-label-connected = %local_ip%
-
-format-disconnected =
-;format-disconnected = <label-disconnected>
-;format-disconnected-underline = ${self.format-connected-underline}
-;label-disconnected = %ifname% disconnected
-;label-disconnected-foreground = ${colors.foreground-alt}
 
 [module/date]
 type = internal/date
