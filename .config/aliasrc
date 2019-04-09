@@ -1,3 +1,8 @@
 #!/bin/sh
-se() { du -a ~/.scripts/* ~/.config/* | awk '{print $2}' | fzf | xargs  -r $EDITOR ;}
+
+alias p="sudo pacman"
+alias dotf="/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"
+
+vc() { du -a ~/.scripts/* ~/.config/* | awk '{print $2}' | fzf | xargs  -r $EDITOR ;}
 vf() { fzf | xargs -r -I % $EDITOR % ;}
+
