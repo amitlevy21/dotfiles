@@ -1,6 +1,7 @@
 let g:powerline_pycmd="py3"
 let mapleader =";"
 
+set showmatch           " highlight matching [{()}]
 " Some basics:
 	set nocompatible
 	filetype plugin on

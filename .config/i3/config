@@ -28,7 +28,7 @@ bindsym $mod+Shift+r restart
 # Insert Emoji
 bindsym $mod+grave exec --no-startup-id dmenuunicode
 
-# #--- Start Applications---# #
+# #---Start Applications---# #
 
 # Start a terminal
 bindsym $mod+Return exec --no-startup-id st
