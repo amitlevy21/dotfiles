@@ -17,11 +17,41 @@
 ;==========================================================
 
 [colors]
-background = #222
-foreground = #eee
-linecolor = #fba922
-bordercolor = #333
-accent = #e60053
+;dark brown
+background = #181621
+
+;red
+foreground = #FF5C57
+red = #FF5C57
+
+;gold
+foreground-alt = #FFB536
+primary = #FFB536
+secondary = #FFB536
+gold = #FFB536
+
+;teal
+lblue = #9AEDFE
+
+;grassy green
+grassy =  #b7ba53
+
+;green
+green = #5AF78E
+
+;blue
+blue = #57C7FF
+
+;light brown
+brown = #FF9742
+
+;yellow
+yellow = #F3F99D
+
+;white
+white = #FFFFFF
+
+linecolor = ${colors.yellow}
 
 [settings]
 screenchange-reload = true
@@ -39,25 +69,29 @@ height = 24
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-line-color = ${colors.linecolor}
+line-color = ${colors.white}
 underline-size = 1
 overline-size = 2
 
 border-bottom-size = 2
-border-bottom-color = ${colors.bordercolor}
+border-bottom-color = ${colors.white}
 
 padding-left = 0
 padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
 
-font-0 = fixed:pixelsize=10;1
-font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
-font-2 = "Wuncon Siji:pixelsize=10;1"
+font-0 = "Nerd Font Complete:style=Regular:size=12;1"
+font-1 = curie:style=Regular:size=18;0
+font-2 = scientifica:style=Regular:size=18;1
+font-3 = siji:size=18;1
+font-4 = "pango:DejaVu Sans Mono:style=Regular:size=18"
+font-5 = "SauceCodePro Nerd Font Mono:style=Regular:size=18;1"
+font-6 = "FontAwesome:style=Regular:size=18;1"
 
 modules-left = i3
 modules-center = xwindow
-modules-right = xkeyboard memory cpu date
+modules-right = cpu memory keyboard date
 
 tray-position = right
 tray-padding = 4
@@ -68,33 +102,23 @@ wm-restack = i3
 scroll-up = i3wm-wsnext
 scroll-down = i3wm-wsprev
 
-;[module/filesystem]
-;type = internal/fs
-;interval = 25
-
-;mount-0 = /
-
-;label-mounted = %{F#0a81f5}%mountpoint%%{F-}: %percentage_used%%
-;label-unmounted = %mountpoint% not mounted
-;label-unmounted-foreground = ${colors.foreground-alt}
-
-; Separator in between workspaces
-; label-separator = |
-
 [module/i3]
 type = internal/i3
 index-sort = true
-pin-workspaces = true
-wrapping-scroll = true
 
 format = <label-state> <label-mode>
 
+ws-icon-0 = 1;
+ws-icon-1 = 2;
+ws-icon-2 = 3;
+ws-icon-3 = 4;阮
+ws-icon-default =
 label-mode = %mode%
 label-mode-padding = 2
-label-mode-background = ${colors.accent}
+label-mode-background = ${colors.red}
 
 ; focused = Active workspace on focused monitor
-label-focused = %index%
+label-focused = %icon%
 label-focused-background = #383838
 label-focused-foreground = #fff
 label-focused-overline= ${colors.linecolor}
@@ -102,121 +126,38 @@ label-focused-underline= #cc333333
 label-focused-padding = 2
 
 ; unfocused = Inactive workspace on any monitor
-label-unfocused = %index%
+label-unfocused = %icon%
 label-unfocused-padding = 2
 
 ; urgent = Workspace with urgency hint set
-label-urgent = %index%
+label-urgent = %icon%
 label-urgent-background = #bd2c40
 label-urgent-padding = 2
 
 ; visible = Active workspace on unfocused monitor
-label-visible = %index%
+label-visible = %icon%
 label-visible-padding = 2
-
-; Separator in between workspaces
-;label-separator = |
 
 [module/cpu]
 type = internal/cpu
 interval = 2
 label = %percentage:2%%
-format-prefix = " "
+format-prefix = ""
 format-prefix-foreground = #666
 
 [module/memory]
 type = internal/memory
 interval = 2
 label = %percentage_used%%
-format-prefix = " "
+format-prefix = ""
 format-prefix-foreground = #666
-
-[module/wifi]
-type = internal/network
-interface = net1
-interval = 3.0
-;udspeed-minwidth = 0
-
-format-connected = <ramp-signal> <label-connected>
-format-connected-prefix = " "
-format-connected-prefix-foreground = #666
-format-connected-prefix-offset = -6
-label-connected = %downspeed:8%
-
-;format-disconnected = <label-disconnected>
-;format-disconnected-prefix = " "
-;format-disconnected-prefix-foreground = #666
-;label-disconnected = not connected
-;label-disconnected-foreground = #999
-
-ramp-signal-0 = 
-ramp-signal-1 = 
-ramp-signal-2 = 
-ramp-signal-3 = 
-ramp-signal-4 = 
-ramp-signal-foreground = #666
 
 [module/date]
 type = internal/date
-label = %{F#666}%{F-} %date%  %{F#e60053}%{F-} %time%
-date = %Y-%m-%d
+label = %{F#666}%{F-} %date%  %{F#e60053}%{F-} %time%
+date = %d-%m-%Y
 time = %H:%M
 interval = 5
-
-;[module/pulseaudio]
-;type = internal/pulseaudio
-
-;format-volume = <label-volume> <bar-volume>
-;label-volume = VOL %percentage%%
-;label-volume-foreground = ${root.foreground}
-
-;label-muted = 🔇 muted
-;label-muted-foreground = #666
-
-;bar-volume-width = 10
-;bar-volume-foreground-0 = #55aa55
-;bar-volume-foreground-1 = #55aa55
-;bar-volume-foreground-2 = #55aa55
-;bar-volume-foreground-3 = #55aa55
-;bar-volume-foreground-4 = #55aa55
-;bar-volume-foreground-5 = #f5a70a
-;bar-volume-foreground-6 = #ff5555
-;bar-volume-gradient = false
-;bar-volume-indicator = |
-;bar-volume-indicator-font = 2
-;bar-volume-fill = ─
-;bar-volume-fill-font = 2
-;bar-volume-empty = ─
-;bar-volume-empty-font = 2
-;bar-volume-empty-foreground = ${colors.foreground-alt}
-
-;[module/alsa]
-;type = internal/alsa
-
-;format-volume = <label-volume> <bar-volume>
-;label-volume = VOL
-;label-volume-foreground = ${root.foreground}
-
-;format-muted-prefix = " "
-;format-muted-foreground = ${colors.foreground-alt}
-;label-muted = sound muted
-
-;bar-volume-width = 10
-;bar-volume-foreground-0 = #55aa55
-;bar-volume-foreground-1 = #55aa55
-;bar-volume-foreground-2 = #55aa55
-;bar-volume-foreground-3 = #55aa55
-;bar-volume-foreground-4 = #55aa55
-;bar-volume-foreground-5 = #f5a70a
-;bar-volume-foreground-6 = #ff5555
-;bar-volume-gradient = false
-;bar-volume-indicator = |
-;bar-volume-indicator-font = 2
-;bar-volume-fill = ─
-;bar-volume-fill-font = 2
-;bar-volume-empty = ─
-;bar-volume-empty-font = 2
-;bar-volume-empty-foreground = ${colors.foreground-alt}
 
 [module/powermenu]
 type = custom/menu
@@ -263,7 +204,6 @@ menu-0-2-exec = pcmanfm
 type = internal/xkeyboard
 blacklist-0 = num lock
 
-format-prefix = " "
 format-prefix-foreground = #666
 
 label-layout = %layout%
