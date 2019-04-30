@@ -231,6 +231,7 @@ for_window [class="Xfburn"] floating enable
 #exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 bar {
+  tray_output none
   font pango:DejaVu Sans Mono, FontAwesome 12
   position top
   status_command /bin/i3status-rs $HOME/.config/i3/status.toml
