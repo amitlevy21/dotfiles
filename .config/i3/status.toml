@@ -1,19 +1,26 @@
-theme = "solarized-dark"
-icons = "awesome"
+[theme]
+name = "solarized-dark"
+
+[theme.overrides]
+idle_fg = "#FFFFFF"
+alternating_tint_bg = "#0088CC"
+
+[icons]
+name = "awesome"
+
+[[block]]
+block = "music"
+player = "spotify"
+buttons = ["prev", "play", "next"]
 
 [[block]]
 block = "focused_window"
 max_width = 21
 
 [[block]]
-block = "music"
-player = "spotify"
-buttons = ["play", "next"]
-
-[[block]]
 block = "disk_space"
-path = "/"
-alias = "/"
+path = "/home"
+alias = "/home"
 info_type = "available"
 unit = "GB"
 interval = 20
