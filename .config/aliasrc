@@ -2,6 +2,7 @@
 
 alias p="sudo pacman"
 alias dotf="/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"
+alias vim="nvim"
 compdef dotf='git'
 
 vc() { du -a ~/.scripts/* ~/.config/* | awk '{print $2}' | fzf | xargs  -r $EDITOR ;}
