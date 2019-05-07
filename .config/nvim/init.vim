@@ -1,5 +1,4 @@
 
-
 call plug#begin('~/.vim/plugged')
 Plug 'machakann/vim-highlightedyank'
 Plug 'autozimu/LanguageClient-neovim', {
@@ -11,18 +10,30 @@ Plug 'janko-m/vim-test'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'w0rp/ale'
 Plug 'rakr/vim-one'
+Plug 'ryanoasis/vim-devicons'
+Plug 'scrooloose/nerdtree'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 call plug#end()
-
 
 let g:deoplete#enable_at_startup = 1
 
 " Do not load powerline by default
 let g:powerline_loaded = 1
 
+" Statusbar
+let g:airline_theme = 'angr'
+
+" Editor GUI
+colorscheme one
 set number relativenumber
 set foldmethod=syntax
-colorscheme one
 set termguicolors
+
+" Key bindings
+let mapleader = "'"
+nnoremap <leader>f :NERDTreeToggle<cr>
 
 " Terminal shortcuts
 tnoremap <Esc> <C-\><C-n>
