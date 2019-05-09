@@ -1,5 +1,5 @@
 
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.local/share/nvim/plugged')
 Plug 'machakann/vim-highlightedyank'
 Plug 'autozimu/LanguageClient-neovim', {
     \ 'branch': 'next',
@@ -15,7 +15,12 @@ Plug 'scrooloose/nerdtree'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
 call plug#end()
+
+" update faster for gitgutter
+set updatetime=100
 
 let g:deoplete#enable_at_startup = 1
 
