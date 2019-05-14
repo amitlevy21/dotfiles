@@ -1,6 +1,8 @@
 
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'machakann/vim-highlightedyank'
+" Welcome screen
+Plug 'mhinz/vim-startify'
 " Auto complete
 Plug 'autozimu/LanguageClient-neovim', {
     \ 'branch': 'next',

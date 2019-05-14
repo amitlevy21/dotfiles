@@ -9,8 +9,8 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
-" Share clipboard between vim instances 
-noremap <leader>y "*y
-noremap <leader>p "*p
-noremap <leader>Y "+y
-noremap <leader>P "+p
+" Copy to system clipboard 
+noremap <leader>Y "*y
+noremap <leader>P "*p
+noremap <leader>y "+y
+noremap <leader>p "+p
