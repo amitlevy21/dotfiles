@@ -35,6 +35,7 @@ Plug 'airblade/vim-gitgutter'
 " Language specific
 " Go
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
+Plug 'sebdah/vim-delve'
 " i3
 Plug 'mboughaba/i3config.vim'
 call plug#end()
