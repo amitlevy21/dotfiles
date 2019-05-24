@@ -262,8 +262,8 @@ set_from_resource $color15	color15 #000000
 set $transparent		#00000000
 
 #                       BORDER		BACKGROUND	TEXT		INDICATOR               CHILD_BORDER
-client.focused		$color9		$color9		$color13	$color12 		$color4
-client.unfocused	$transparent	$color12	$color15	$color4 		$color0
+client.focused		$color9		$color9		$color13	$color14 		$color14
+client.unfocused	$transparent	$color12	$color15	$color9 		$color0
 client.focused_inactive	$transparent	$color12	$color15	$color4 		$color0
 client.urgent		$color1	        $color1 	$color8		$color1 		$color1
 client.background       $color8
