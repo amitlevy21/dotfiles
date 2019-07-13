@@ -39,7 +39,7 @@ interval = 1
 
 [[block]]
 block = "net"
-device = "wlp0s26u1u3"
+device = "wlp0s26u1u5"
 speed_up = true
 speed_down = true
 interval = 5
