@@ -48,3 +48,4 @@ source $ZSH/oh-my-zsh.sh
 [ -f "$HOME/.config/aliasrc" ] && source "$HOME/.config/aliasrc"
 
 export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
