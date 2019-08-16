@@ -14,7 +14,7 @@ xnoremap <C-K> <C-W><C-K>
 xnoremap <C-L> <C-W><C-L>
 xnoremap <C-H> <C-W><C-H>
 
-" Copy to system clipboard 
+" Copy to system clipboard
 noremap <leader>Y "*y
 noremap <leader>P "*p
 noremap <leader>y "+y
@@ -35,4 +35,11 @@ function! Cycle_numbering() abort
 endfunction
 
 nnoremap <leader>r :call Cycle_numbering()<CR>
+
+" Accidental Q when exiting should exit
+nmap Q q
+
+" D is for deleting line from cursor position to end of line as of C, so Y
+" should consist
+noremap Y y$
 
