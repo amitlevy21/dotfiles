@@ -9,6 +9,11 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
+xnoremap <C-J> <C-W><C-J>
+xnoremap <C-K> <C-W><C-K>
+xnoremap <C-L> <C-W><C-L>
+xnoremap <C-H> <C-W><C-H>
+
 " Copy to system clipboard 
 noremap <leader>Y "*y
 noremap <leader>P "*p
