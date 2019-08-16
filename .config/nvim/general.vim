@@ -8,6 +8,10 @@ set number relativenumber
 set foldmethod=syntax
 set termguicolors
 
+" Reload file in case is changed from outside
+set autoread
+au FocusGained * :checktime
+
 " Auto save
 set autowrite
 
@@ -22,4 +26,4 @@ augroup dynamic_smartcase
     autocmd!
     autocmd CmdLineEnter : set nosmartcase
     autocmd CmdLineLeave : set smartcase
-augroup END<Paste>
+augroup END
