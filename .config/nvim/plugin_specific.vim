@@ -35,3 +35,6 @@ aug end
 " Show hidden files
 let NERDTreeShowHidden=1
 
+" Ale
+" Show errors in quickfix list
+let g:ale_set_quickfix = 1
