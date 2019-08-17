@@ -3,11 +3,12 @@ call plug#begin('~/.local/share/nvim/plugged')
 Plug 'machakann/vim-highlightedyank'
 " Welcome screen
 Plug 'mhinz/vim-startify'
-" Auto complete
+" Language Client
 Plug 'autozimu/LanguageClient-neovim', {
     \ 'branch': 'next',
     \ 'do': 'bash install.sh',
     \ }
+" Auto complete
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'deoplete-plugins/deoplete-go', { 'do': 'make'}
 " Lint
@@ -20,6 +21,7 @@ Plug 'janko-m/vim-test'
 " Fuzzy finder
 Plug 'junegunn/fzf'
 " Coloscheme
+Plug 'chriskempson/base16-vim'
 Plug 'rakr/vim-one'
 " Icons
 Plug 'ryanoasis/vim-devicons'
