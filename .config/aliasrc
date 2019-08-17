@@ -5,6 +5,6 @@ alias dotf="/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"
 alias vim="nvim"
 compdef dotf='git'
 
-vc() { du -a ~/.scripts/* ~/.config/* | awk '{print $2}' | fzf | xargs  -r $EDITOR ;}
+vc() { du -a ~/.scripts/* ~/.config/* --exclude={google-chrome,balena-etcher-electron,"Code - OSS"} | awk '{print $2}' | fzf | xargs  -r $EDITOR ;}
 vf() { fzf | xargs -r -I % $EDITOR % ;}
 
