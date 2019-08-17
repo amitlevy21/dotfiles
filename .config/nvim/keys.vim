@@ -49,3 +49,12 @@ nnoremap <silent> <Down> :cnext<CR>
 nnoremap <silent> <Left> :cpfile<CR>
 nnoremap <silent> <Right> :cnfile<CR>
 
+" Go to previous buffer
+nnoremap <leader><leader> <C-^>
+
+nnoremap <leader>q :quit<CR>
+nnoremap <leader>w :write<CR>
+nnoremap <leader>x :xit<CR>
+
+nnoremap <leader>e :edit <C-R>=expand('%:p:h') . '/'<CR>
+
