@@ -49,3 +49,4 @@ source $ZSH/oh-my-zsh.sh
 
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
+export FZF_DEFAULT_COMMAND='fd --type f'
