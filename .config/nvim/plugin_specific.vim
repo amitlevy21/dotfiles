@@ -21,7 +21,7 @@ smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
                         \ "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
 
 " vim-airline - statusbar
-let g:airline_theme = 'angr'
+let g:airline_theme = 'powerlineish'
 " Integrate with ale
 let g:airline#extensions#ale#enabled = 1
 
