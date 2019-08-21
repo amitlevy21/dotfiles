@@ -20,6 +20,10 @@ noremap <leader>P "*p
 noremap <leader>y "+y
 noremap <leader>p "+p
 
+" Move VISUAL LINE selection within buffer.
+xnoremap <silent> K :call mappings#visual#move_up()<CR>
+xnoremap <silent> J :call mappings#visual#move_down()<CR>
+
 " Cycle between number line modes
 function! Cycle_numbering() abort
   if exists('+relativenumber')
