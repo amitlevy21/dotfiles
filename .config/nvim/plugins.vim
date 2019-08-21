@@ -11,6 +11,8 @@ Plug 'autozimu/LanguageClient-neovim', {
 " Auto complete
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'deoplete-plugins/deoplete-go', { 'do': 'make'}
+" Alternate between files
+Plug 'tpope/vim-projectionist'
 " Lint
 Plug 'w0rp/ale'
 " Snippets
