@@ -1,5 +1,5 @@
 
-let mapleader = "'"
+let mapleader = " "
 nnoremap <leader>b :NERDTreeToggle<cr>
 nnoremap <leader>f :FZF<cr>
 
