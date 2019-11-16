@@ -66,7 +66,7 @@ bindsym XF86AudioNext exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer
 # #---Autostart applications---# #
 
 # Keyboard mappings
-exec --no-startup-id remaps
+exec_always --no-startup-id remaps
 
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id nitrogen --restore; sleep 1; compton -b
