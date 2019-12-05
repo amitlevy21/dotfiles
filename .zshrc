@@ -35,7 +35,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions fzf zsh-syntax-highlighting last-working-dir docker docker-compose)
+plugins=(git zsh-autosuggestions fzf zsh-syntax-highlighting last-working-dir docker docker-compose kubectl asdf)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -49,6 +49,7 @@ source $ZSH/oh-my-zsh.sh
 
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:/usr/local/kubebuilder/bin
 export FZF_DEFAULT_COMMAND='fd --type f'
 
 export GPG_TTY=$(tty)
