@@ -6,6 +6,7 @@ let g:powerline_loaded = 1
 colorscheme base16-solarflare
 set number relativenumber
 set foldmethod=syntax
+set nofoldenable
 set termguicolors
 set scrolloff=3                       " start scrolling 3 lines before edge of viewport
 
