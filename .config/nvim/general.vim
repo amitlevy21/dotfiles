@@ -11,7 +11,7 @@ set termguicolors
 set scrolloff=3                       " start scrolling 3 lines before edge of viewport
 
 " Line break icon
-set showbreak='↪'
+set showbreak=↪
 
 set list                              " show whitespace
 set listchars=nbsp:⦸                  " CIRCLED REVERSE SOLIDUS (U+29B8, UTF-8: E2 A6 B8)
@@ -41,3 +41,4 @@ augroup dynamic_smartcase
     autocmd CmdLineEnter : set nosmartcase
     autocmd CmdLineLeave : set smartcase
 augroup END
+
