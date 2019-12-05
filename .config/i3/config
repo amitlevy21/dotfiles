@@ -127,6 +127,12 @@ bindsym $mod+t split toggle
 # Toggle fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
 
+# Make the currently focused window a scratchpad
+bindsym $mod+Shift+minus move scratchpad
+
+# Show the first scratchpad window
+bindsym $mod+minus scratchpad show
+
 # Toggle sticky
 bindsym $mod+Shift+s sticky toggle
 
