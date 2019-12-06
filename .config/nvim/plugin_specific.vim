@@ -1,6 +1,3 @@
-" gitgutter
-set updatetime=100
-
 " vim-airline - statusbar
 let g:airline_theme = 'powerlineish'
 

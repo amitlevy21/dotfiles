@@ -1,14 +1,18 @@
 " Do not load powerline by default
 let g:powerline_loaded = 1
 
+" Python paths
+let g:python_host_prog = '/usr/bin/python2'
+let g:python3_host_prog = '/usr/bin/python'
+
 " Editor
-" GUI
 colorscheme base16-solarflare
 set number relativenumber
 set foldmethod=syntax
 set nofoldenable
 set termguicolors
 set scrolloff=3                       " start scrolling 3 lines before edge of viewport
+set updatetime=100                    " faster refresh rate for plugins
 
 " Line break icon
 set showbreak=↪
