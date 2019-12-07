@@ -31,6 +31,9 @@ au FocusGained * :checktime
 " Auto save
 set autowrite
 
+" Auto chdir to dir of file
+set autochdir
+
 " Natural split
 set splitbelow
 set splitright
