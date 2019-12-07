@@ -3,18 +3,14 @@ call plug#begin('~/.local/share/nvim/plugged')
 Plug 'machakann/vim-highlightedyank'
 " Welcome screen
 Plug 'mhinz/vim-startify'
-" Language Client
-Plug 'autozimu/LanguageClient-neovim', {
-    \ 'branch': 'next',
-    \ 'do': 'bash install.sh',
-    \ }
-" Auto complete
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'deoplete-plugins/deoplete-go', { 'do': 'make'}
+" Auto save
+Plug '907th/vim-auto-save'
+"Auto complete
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Zen mode
+Plug 'junegunn/goyo.vim'
 " Alternate between files
 Plug 'tpope/vim-projectionist'
-" Lint
-Plug 'w0rp/ale'
 " Snippets
 Plug 'Shougo/neosnippet.vim'
 Plug 'Shougo/neosnippet-snippets'

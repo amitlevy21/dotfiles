@@ -45,12 +45,6 @@ nmap Q q
 " should consist
 noremap Y y$
 
-" Navigate through quickfix list via arrow keys
-nnoremap <silent> <Up> :cprevious<CR>
-nnoremap <silent> <Down> :cnext<CR>
-nnoremap <silent> <Left> :cpfile<CR>
-nnoremap <silent> <Right> :cnfile<CR>
-
 " Go to previous buffer
 nnoremap <leader><leader> <C-^>
 
