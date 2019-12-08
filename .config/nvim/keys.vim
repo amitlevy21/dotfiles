@@ -1,7 +1,5 @@
 
 let mapleader = " "
-nnoremap <leader>b :NERDTreeToggle<cr>
-nnoremap <leader>f :FZF<cr>
 
 " Split navigation
 nnoremap <C-J> <C-W><C-J>
@@ -53,4 +51,18 @@ nnoremap <leader>w :write<CR>
 nnoremap <leader>x :xit<CR>
 
 nnoremap <leader>e :edit <C-R>=expand('%:p:h') . '/'<CR>
+
+
+" Plugins
+
+" NerdTree
+nnoremap <leader>b :NERDTreeToggle<cr>
+
+" Coc
+source $HOME/.config/nvim/coc.vim
+
+" Fzf
+nnoremap <leader>f :FZF<cr>
+nnoremap <leader>c :Commands<CR>
+nnoremap <leader>gss :GFiles?<CR>
 

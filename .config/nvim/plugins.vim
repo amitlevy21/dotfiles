@@ -18,6 +18,7 @@ Plug 'Shougo/neosnippet-snippets'
 Plug 'janko-m/vim-test'
 " Fuzzy finder
 Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
 " Coloscheme
 Plug 'chriskempson/base16-vim'
 Plug 'rakr/vim-one'
