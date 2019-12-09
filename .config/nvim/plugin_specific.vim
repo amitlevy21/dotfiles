@@ -13,6 +13,8 @@ aug end
 " NerdTree
 " Show hidden files
 let NERDTreeShowHidden=1
+" Hide files by pattern
+let NERDTreeIgnore=['\.pyc$', '__pycache__']
 
 " Auto-save-vim
 let g:auto_save = 1  " enable AutoSave on Vim startup

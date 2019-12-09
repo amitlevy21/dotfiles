@@ -62,7 +62,11 @@ nnoremap <leader>b :NERDTreeToggle<cr>
 source $HOME/.config/nvim/coc.vim
 
 " Fzf
-nnoremap <leader>f :FZF<cr>
-nnoremap <leader>c :Commands<CR>
-nnoremap <leader>gss :GFiles?<CR>
+nmap <leader>f :FZF<cr>
+nmap <leader>c :Commands<CR>
+nmap <leader>gs :GFiles?<CR>
+nmap <leader>b :Buffers<CR>
+nmap <leader>h :History<CR>
+nmap <leader>t :BTags<CR>
+nmap <leader>T :Tags<CR>
 
