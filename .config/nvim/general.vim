@@ -13,6 +13,7 @@ set nofoldenable
 set termguicolors
 set scrolloff=3                       " start scrolling 3 lines before edge of viewport
 set updatetime=100                    " faster refresh rate for plugins
+set spell                             " Spell checking
 
 " Line break icon
 set showbreak=↪
