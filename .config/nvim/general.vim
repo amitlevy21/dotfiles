@@ -49,3 +49,7 @@ augroup dynamic_smartcase
     autocmd CmdLineLeave : set smartcase
 augroup END
 
+" Terminal
+" Hide line numbers
+au TermOpen * setlocal nonumber norelativenumber
+
