@@ -56,7 +56,7 @@ nnoremap <leader>e :edit <C-R>=expand('%:p:h') . '/'<CR>
 " Plugins
 
 " NerdTree
-nnoremap <leader>b :NERDTreeToggle<cr>
+nnoremap <leader>n :NERDTreeToggle<cr>
 
 " Coc
 source $HOME/.config/nvim/coc.vim
@@ -69,4 +69,9 @@ nmap <leader>b :Buffers<CR>
 nmap <leader>h :History<CR>
 nmap <leader>t :BTags<CR>
 nmap <leader>T :Tags<CR>
+nmap <Leader>/ :Rg<Space>
+
+
+" Fugitive
+nmap <leader>gb :Gblame<CR>
 
