@@ -34,6 +34,8 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 " Language specific
+" Python better syntax highlighting
+Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
 " Go
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 Plug 'sebdah/vim-delve'
