@@ -7,6 +7,8 @@ Plug 'mhinz/vim-startify'
 Plug '907th/vim-auto-save'
 "Auto complete
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Commenter
+Plug 'tpope/vim-commentary'
 " Zen mode
 Plug 'junegunn/goyo.vim'
 " Alternate between files
