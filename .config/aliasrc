@@ -4,7 +4,9 @@ alias p="sudo pacman"
 alias dotf="/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"
 alias vim="nvim"
 alias v='vim'
+alias dt='dotf'
 compdef dotf='git'
+compdef dt='git'
 
 vc() { fd '.*' ~/.scripts ~/.config --exclude={google-chrome,balena-etcher-electron,"Code - OSS"} | fzf | xargs  -r $EDITOR ;}
 vf() { fzf | xargs -r -I % $EDITOR % ;}
