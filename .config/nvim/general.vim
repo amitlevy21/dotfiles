@@ -14,6 +14,7 @@ set termguicolors
 set scrolloff=3                       " start scrolling 3 lines before edge of viewport
 set updatetime=100                    " faster refresh rate for plugins
 set spell                             " Spell checking
+set cursorline                        " highlight current line
 
 " Line break icon
 set showbreak=↪
@@ -24,6 +25,10 @@ set listchars+=tab:▷┅                 " WHITE RIGHT-POINTING TRIANGLE (U+25B
 set listchars+=extends:»              " RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK (U+00BB, UTF-8: C2 BB)
 set listchars+=precedes:«             " LEFT-POINTING DOUBLE ANGLE QUOTATION MARK (U+00AB, UTF-8: C2 AB)
 set listchars+=trail:•                " BULLET (U+2022, UTF-8: E2 80 A2)
+set fillchars=vert:┃              " BOX DRAWINGS HEAVY VERTICAL (U+2503, UTF-8: E2 94 83)
+" Disable theme for vertical split line, without it fillchars=vert wont work
+highlight VertSplit ctermbg=NONE guibg=NONE
+
 " Reload file in case is changed from outside
 set autoread
 

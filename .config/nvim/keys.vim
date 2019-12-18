@@ -71,6 +71,7 @@ nmap <leader>c :Commands<CR>
 nmap <leader>gs :GFiles?<CR>
 nmap <leader>b :Buffers<CR>
 nmap <leader>h :History<CR>
+nmap <leader>H :Helptags<CR>
 nmap <leader>t :BTags<CR>
 nmap <leader>T :Tags<CR>
 nmap <Leader>/ :Rg<Space>
