@@ -15,6 +15,7 @@ set scrolloff=3                       " start scrolling 3 lines before edge of v
 set updatetime=100                    " faster refresh rate for plugins
 set spell                             " Spell checking
 set cursorline                        " highlight current line
+set iskeyword-=_                      " Don't treat words separated by _ as a single word
 
 " Line break icon
 set showbreak=↪
