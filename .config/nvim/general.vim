@@ -2,8 +2,8 @@
 let g:powerline_loaded = 1
 
 " Python paths
-let g:python_host_prog = '/usr/bin/python'
-let g:python3_host_prog = '/usr/bin/python3.6'
+let g:python_host_prog = '/usr/bin/python2'
+let g:python3_host_prog = '/usr/bin/python'
 
 " Editor
 colorscheme base16-solarflare
