@@ -2,7 +2,15 @@
 source $HOME/.config/nvim/coc.vim
 
 " vim-airline - statusbar
-let g:airline_theme = 'powerlineish'
+let g:airline_powerline_fonts = 1
+let g:airline_detect_spell = 0                             " Don't show spell in statusbar
+
+if !exists('g:airline_symbols')
+  let g:airline_symbols = {}
+endif
+let g:airline_symbols.dirty=' ⚡'
+let g:airline_symbols.linenr = ''
+let g:airline_symbols.maxlinenr = ''
 
 " Auto detect i3 config without chaning it's file extension
 aug i3config_ft_detection
