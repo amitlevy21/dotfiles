@@ -53,7 +53,7 @@ nnoremap <leader>x :xit<CR>
 nnoremap <leader>e :edit <C-R>=expand('%:p:h') . '/'<CR>
 
 " Terminal
-nnoremap <leader>, :vsplit term://zsh<CR>
+nnoremap <leader>, :split term://zsh<CR>
 tnoremap <Esc> <C-\><C-n>
 
 

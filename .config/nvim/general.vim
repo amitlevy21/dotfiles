@@ -16,6 +16,8 @@ set updatetime=100                    " faster refresh rate for plugins
 set spell                             " Spell checking
 set cursorline                        " highlight current line
 set iskeyword-=_                      " Don't treat words separated by _ as a single word
+set tabstop=4                         " Set tab size
+set mouse=n                           " Easy resize for splits
 
 " Line break icon
 set showbreak=↪
