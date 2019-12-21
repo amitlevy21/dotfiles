@@ -8,6 +8,6 @@ alias dt='dotf'
 compdef dotf='git'
 compdef dt='git'
 
-vc() { fd '.*' ~/.scripts ~/.config --exclude={google-chrome,balena-etcher-electron,"Code - OSS"} | fzf | xargs  -r $EDITOR ;}
+vc() { fd '.*' ~/.scripts ~/.config --exclude={google-chrome,balena-etcher-electron,"Code - OSS"} | fzf | xargs -r $EDITOR ;}
 vf() { fzf | xargs -r -I % $EDITOR % ;}
 
