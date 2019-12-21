@@ -54,6 +54,7 @@ export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:/usr/local/kubebuilder/bin
 export FZF_DEFAULT_COMMAND='fd --type f'
+export FZF_ALT_C_COMMAND="fd -t d . $HOME"
 
 export GPG_TTY=$(tty)
 
