@@ -1,4 +1,11 @@
 {
   "python.jediEnabled": false,
-  "python.linting.flake8Enabled": true
+  "python.linting.flake8Enabled": true,
+  "languageserver": {
+    "golang": {
+      "command": "gopls",
+      "rootPatterns": ["go.mod", ".vim/", ".git/", ".hg/"],
+      "filetypes": ["go"]
+    }
+  }
 }

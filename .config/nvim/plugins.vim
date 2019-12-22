@@ -41,6 +41,7 @@ Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
 " Go
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 Plug 'sebdah/vim-delve'
+Plug 'godoctor/godoctor.vim'
 " i3
 Plug 'mboughaba/i3config.vim'
 call plug#end()
