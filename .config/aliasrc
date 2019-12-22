@@ -5,6 +5,10 @@ alias dotf="/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"
 alias vim="nvim"
 alias v='vim'
 alias dt='dotf'
+alias j='cd "$(fd -t d '"'.*'"' $HOME | fzf)"'
+alias jh='cd "$(fd -t d '"'.*'"' --hidden $HOME | fzf)"'
+alias jg='cd "$(fd -t d '"'.*'"' / | fzf)"'
+
 compdef dotf='git'
 compdef dt='git'
 
