@@ -35,6 +35,7 @@ Plug 'vim-airline/vim-airline-themes'
 " Tmux
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'edkolev/tmuxline.vim'
+Plug 'benmills/vimux'
 " Git
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
