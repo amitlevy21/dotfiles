@@ -37,3 +37,6 @@ let g:startify_change_to_vcs_root = 1                      " cd to the root of a
 let g:VimuxOrientation = "h"                               " Split to side pane
 let g:VimuxHeight = "40"
 
+" Gitgutter
+let g:gitgutter_map_keys = 0                               " Disable plug bindings, which also use <leader>h prefix that slows other bindings
+
