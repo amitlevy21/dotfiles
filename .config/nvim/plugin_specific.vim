@@ -13,6 +13,12 @@ endif
 let g:airline_symbols.linenr = ''
 let g:airline_symbols.maxlinenr = ''
 
+" Tmuxline
+let g:tmuxline_preset = {
+      \'a'    : '#S',
+      \'b'    : '',
+      \'c'    : ['#I', '#W']}
+
 " Auto detect i3 config without chaning it's file extension
 aug i3config_ft_detection
   au!
