@@ -15,9 +15,10 @@ let g:airline_symbols.maxlinenr = ''
 
 " Tmuxline
 let g:tmuxline_preset = {
-      \'a'    : '#S',
-      \'b'    : '',
-      \'c'    : ['#I', '#W']}
+      \'a'       : '#S',
+      \'b'       : '',
+      \'win'     : ['#I', '#W'],
+      \'options' : {'status-justify' : 'left'}}
 
 " Auto detect i3 config without chaning it's file extension
 aug i3config_ft_detection
