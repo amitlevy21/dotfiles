@@ -1,6 +1,7 @@
 {
   "python.jediEnabled": false,
   "python.linting.flake8Enabled": true,
+  "python.envFile": "${workspaceFolder}/.vscode/vscode.env",
   "languageserver": {
     "golang": {
       "command": "gopls",
