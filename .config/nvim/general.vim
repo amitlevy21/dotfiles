@@ -18,6 +18,8 @@ set cursorline                        " highlight current line
 set iskeyword-=_                      " Don't treat words separated by _ as a single word
 set tabstop=4                         " Set tab size
 set mouse=n                           " Easy resize for splits
+set expandtab                         " Replace tabs with spaces
+set shiftwidth=2                      " Size of indent for new lines
 
 " Line break icon
 set showbreak=↪
