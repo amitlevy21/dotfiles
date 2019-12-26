@@ -5,6 +5,10 @@ Plug 'machakann/vim-highlightedyank'
 Plug 'mhinz/vim-startify'
 " Auto save
 Plug '907th/vim-auto-save'
+" Surrond
+Plug 'tpope/vim-surround'
+" Repeat . for plugins
+Plug 'tpope/vim-repeat'
 "Auto complete
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Commenter
