@@ -12,11 +12,21 @@ if !exists('g:airline_symbols')
 endif
 let g:airline_symbols.linenr = ''
 let g:airline_symbols.maxlinenr = ''
+let g:airline_skip_empty_sections = 1
+" This is for tmuxline actually, the default color for section b does not look
+" good for the current window shown in tmuxline
+let g:airline_theme_patch_func = 'AirlineThemePatch'
+function! AirlineThemePatch(palette)
+  if g:airline_theme == 'base16'
+    let a:palette.normal.airline_b[0] = a:palette.normal.airline_a[0]
+    let a:palette.normal.airline_b[1] = a:palette.normal.airline_a[1]
+  endif
+endfunction
 
 " Tmuxline
 let g:tmuxline_preset = {
       \'a'       : '#S',
-      \'b'       : '',
+      \'cwin'    : ['#I', '#W'],
       \'win'     : ['#I', '#W'],
       \'options' : {'status-justify' : 'left'}}
 
