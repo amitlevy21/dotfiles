@@ -68,7 +68,7 @@ function start_agent {
         /usr/bin/ssh-add -t 21600 ;
 }
 
-if [ $(uname -r) != *el* ]; then
+if [[ $(uname -r) != *el* ]]; then
   if [ -f "${SSH_ENV}" ]; then
     . "${SSH_ENV}" > /dev/null
     ps -ef | grep ${SSH_AGENT_PID} | grep ssh-agent$ > /dev/null || {
