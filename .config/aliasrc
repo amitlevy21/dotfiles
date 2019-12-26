@@ -8,6 +8,7 @@ alias \
         dta='dt add -p' \
         dtc='dt commit' \
         dtd='dt diff' \
+        dtp='dt push' \
         dk="docker" \
         dkc="docker-compose" \
         dexe="docker exec -it" \
