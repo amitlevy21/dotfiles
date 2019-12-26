@@ -63,3 +63,6 @@ rabbitmq
 ssl
 json
 xlsm
+nvim
+vim
+diff
