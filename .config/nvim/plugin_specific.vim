@@ -49,6 +49,14 @@ let g:auto_save_silent = 1  " do not display the auto-save notification
 " Startify
 let g:startify_change_to_dir = 0                           " Do not cd to file dir
 let g:startify_change_to_vcs_root = 1                      " cd to the root of a vcs project
+let g:startify_skiplist = [
+    \ 'COMMIT_EDITMSG',
+    \ ]
+let g:startify_fortune_use_unicode = 1
+let g:startify_custom_header = []
+let g:startify_session_persistence = 1
+let g:startify_session_sort = 1
+let g:startify_session_number = 5
 
 " Vimux
 let g:VimuxOrientation = "h"                               " Split to side pane
