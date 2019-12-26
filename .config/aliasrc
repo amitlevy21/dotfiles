@@ -1,16 +1,21 @@
 #!/bin/sh
 
-alias p="sudo pacman"
-alias dotf="/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"
-alias vim="nvim"
-alias v='vim'
-alias dt='dotf'
-alias j='cd "$(fd -t d '"'.*'"' $HOME | fzf)"'
-alias jh='cd "$(fd -t d '"'.*'"' --hidden $HOME | fzf)"'
-alias jg='cd "$(fd -t d '"'.*'"' / | fzf)"'
-
-compdef dotf='git'
-compdef dt='git'
+alias \
+        p="sudo pacman" \
+        gs="git status" \
+        dt="/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME" \
+        dts='dt status' \
+        dta='dt add -p' \
+        dtc='dt commit' \
+        dtd='dt diff' \
+        dk="docker" \
+        dkc="docker-compose" \
+        dexe="docker exec -it" \
+        vim="nvim" \
+        v='vim' \
+        j='cd "$(fd -t d '"'.*'"' $HOME | fzf)"' \
+        jh='cd "$(fd -t d '"'.*'"' --hidden $HOME | fzf)"' \
+        jg='cd "$(fd -t d '"'.*'"' / | fzf)"'
 
 vc() { dt ls-tree --full-tree -r HEAD --name-only | sed "s,^,$HOME/," | fzf | xargs -r $EDITOR ;}
 vf() { fzf | xargs -r -I % $EDITOR % ;}
