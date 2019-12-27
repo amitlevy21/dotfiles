@@ -77,5 +77,7 @@ if [[ $(uname -r) != *el* ]]; then
   else
     start_agent;
   fi
+
+  eval "$(starship init zsh)"
 fi
 
