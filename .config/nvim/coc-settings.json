@@ -3,6 +3,8 @@
   "python.linting.flake8Enabled": true,
   "python.envFile": "${workspaceFolder}/.vscode/vscode.env",
   "diagnostic.checkCurrentLine": true,
+  "diagnostic.virtualText": true,
+  "git.addGBlameToVirtualText": true,
   "languageserver": {
     "golang": {
       "command": "gopls",
