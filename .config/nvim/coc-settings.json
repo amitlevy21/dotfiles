@@ -2,6 +2,7 @@
   "python.jediEnabled": false,
   "python.linting.flake8Enabled": true,
   "python.envFile": "${workspaceFolder}/.vscode/vscode.env",
+  "diagnostic.checkCurrentLine": true,
   "languageserver": {
     "golang": {
       "command": "gopls",
