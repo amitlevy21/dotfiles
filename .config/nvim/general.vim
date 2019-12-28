@@ -30,8 +30,6 @@ set listchars+=extends:»              " RIGHT-POINTING DOUBLE ANGLE QUOTATION M
 set listchars+=precedes:«             " LEFT-POINTING DOUBLE ANGLE QUOTATION MARK (U+00AB, UTF-8: C2 AB)
 set listchars+=trail:•                " BULLET (U+2022, UTF-8: E2 80 A2)
 set fillchars=vert:┃                  " BOX DRAWINGS HEAVY VERTICAL (U+2503, UTF-8: E2 94 83)
-let space_match = matchadd('Conceal', '\v( @<= )|(  @=)', -1, -1, {'conceal': '·'})
-set conceallevel=1
 
 " Disable theme for vertical split line, without it fillchars=vert wont work
 highlight VertSplit ctermbg=NONE guibg=NONE
