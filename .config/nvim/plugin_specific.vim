@@ -57,6 +57,13 @@ let g:startify_custom_header = []
 let g:startify_session_persistence = 1
 let g:startify_session_sort = 1
 let g:startify_session_number = 5
+let g:startify_custom_header = [
+      \ ' _    ___',
+      \ '| |  / (_)___ ___ ',
+      \ '| | / / / __ `__ \',
+      \ '| |/ / / / / / / /',
+      \ '|___/_/_/ /_/ /_/ ',
+      \ ]
 
 " Vimux
 let g:VimuxOrientation = "h"                               " Split to side pane
