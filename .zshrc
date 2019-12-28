@@ -1,8 +1,5 @@
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
-
 # Path to your oh-my-zsh installation.
-  export ZSH="/home/amit/.oh-my-zsh"
+export ZSH="/home/amit/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -41,11 +38,6 @@ COMPLETION_WAITING_DOTS="true"
 plugins=(git zsh-autosuggestions fzf zsh-syntax-highlighting last-working-dir docker docker-compose forgit)
 
 source $ZSH/oh-my-zsh.sh
-
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
-
-# ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 [ -f "$HOME/.config/aliasrc" ] && source "$HOME/.config/aliasrc"
