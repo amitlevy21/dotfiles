@@ -34,7 +34,10 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Return exec --no-startup-id $term
 
 # Start ranger
-bindsym $mod+r exec --no-startup-id $term -e $file_m
+bindsym $mod+r exec --no-startup-id "rofi -show combi"
+
+# Start ranger
+bindsym $mod+n exec --no-startup-id $term -e $file_m
 
 # Start web browser
 bindsym $mod+w exec --no-startup-id $brow
