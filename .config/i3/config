@@ -9,6 +9,9 @@ set $term $TERMINAL
 # Set file manager
 set $file_m $FILE
 
+# Set browser
+set $brow $BROWSER
+
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
 new_window pixel 2
 new_float normal
@@ -25,9 +28,6 @@ bindsym $mod+Shift+c reload
 # Restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 
-# Insert Emoji
-bindsym $mod+grave exec --no-startup-id dmenuunicode
-
 # #---Start Applications---# #
 
 # Start a terminal
@@ -37,10 +37,7 @@ bindsym $mod+Return exec --no-startup-id $term
 bindsym $mod+r exec --no-startup-id $term -e $file_m
 
 # Start web browser
-bindsym $mod+w exec --no-startup-id google-chrome-stable
-
-# Start dmenu
-bindsym $mod+d exec --no-startup-id dmenu_recency
+bindsym $mod+w exec --no-startup-id $brow
 
 # Take a screenshot
 bindsym $mod+s exec --no-startup-id flameshot gui
