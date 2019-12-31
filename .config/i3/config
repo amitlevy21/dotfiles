@@ -208,7 +208,7 @@ for_window [class="Xfburn"] floating enable
 
 bar {
   tray_output none
-  font pango:DejaVu Sans Mono, FontAwesome 12
+  font pango:DejaVu Sans Mono, FontAwesome 14
   position top
   status_command /bin/i3status-rs $HOME/.config/i3/status.toml
   colors {
