@@ -38,7 +38,6 @@ COMPLETION_WAITING_DOTS="true"
 plugins=(git zsh-autosuggestions fzf zsh-syntax-highlighting last-working-dir docker docker-compose forgit)
 
 source $ZSH/oh-my-zsh.sh
-# export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 [ -f "$HOME/.config/aliasrc" ] && source "$HOME/.config/aliasrc"
 

@@ -1,4 +1,4 @@
-# #---Basic Definiotions---# #
+# #---Basic Definitions---# #
 
 # Set mod key (Mod1=<Alt>, Mod4=<Super>)
 set $mod Mod4
@@ -50,9 +50,9 @@ bindsym $mod+Shift+F3 exec gksu pcmanfm
 bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
 
 # #---Sound control---# #
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl -- set-sink-volume 0 +5% #increase sound volume
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl -- set-sink-volume 0 -5% #decrease sound volume
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl -- set-sink-volume 0 +5%
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl -- set-sink-volume 0 -5%
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
 
 # Spotify related key bindings
 bindsym XF86AudioPlay exec --no-startup-id "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause"
@@ -70,10 +70,6 @@ exec --no-startup-id nm-applet
 exec --no-startup-id /usr/lib/geoclue-2.0/demos/agent
 exec --no-startup-id redshift-gtk
 exec --no-startup-id keepassxc
-
-# Font for window titles. Will also be used by the bar unless a different font
-# is used in the bar {} block below.
-font xft:URWGothic-Book 11
 
 # #---Movement & Control---# #
 
@@ -136,24 +132,24 @@ set $ws7 "7"
 set $ws8 "8"
 
 # Switch to workspace
-bindsym $mod+1		workspace $ws1
-bindsym $mod+2		workspace $ws2
-bindsym $mod+3		workspace $ws3
-bindsym $mod+4		workspace $ws4
-bindsym $mod+5		workspace $ws5
-bindsym $mod+6		workspace $ws6
-bindsym $mod+7		workspace $ws7
-bindsym $mod+8		workspace $ws8
+bindsym $mod+1 workspace $ws1
+bindsym $mod+2 workspace $ws2
+bindsym $mod+3 workspace $ws3
+bindsym $mod+4 workspace $ws4
+bindsym $mod+5 workspace $ws5
+bindsym $mod+6 workspace $ws6
+bindsym $mod+7 workspace $ws7
+bindsym $mod+8 workspace $ws8
 
 # Move focused container to workspace
-bindsym $mod+Shift+1	move container to workspace $ws1
-bindsym $mod+Shift+2	move container to workspace $ws2
-bindsym $mod+Shift+3	move container to workspace $ws3
-bindsym $mod+Shift+4	move container to workspace $ws4
-bindsym $mod+Shift+5	move container to workspace $ws5
-bindsym $mod+Shift+6	move container to workspace $ws6
-bindsym $mod+Shift+7	move container to workspace $ws7
-bindsym $mod+Shift+8	move container to workspace $ws8
+bindsym $mod+Shift+1 move container to workspace $ws1
+bindsym $mod+Shift+2 move container to workspace $ws2
+bindsym $mod+Shift+3 move container to workspace $ws3
+bindsym $mod+Shift+4 move container to workspace $ws4
+bindsym $mod+Shift+5 move container to workspace $ws5
+bindsym $mod+Shift+6 move container to workspace $ws6
+bindsym $mod+Shift+7 move container to workspace $ws7
+bindsym $mod+Shift+8 move container to workspace $ws8
 
 # Switch to workspace with urgent window automatically
 for_window [urgent=latest] focus
@@ -238,28 +234,28 @@ gaps outer -2
 # #---Colors---# #
 
 # Set Xresources colors:
-set_from_resource $color0	color0  #000000
-set_from_resource $color1	color1  #000000
-set_from_resource $color2	color2  #000000
-set_from_resource $color3	color3  #000000
-set_from_resource $color4	color4  #000000
-set_from_resource $color5	color5  #000000
-set_from_resource $color6	color6  #000000
-set_from_resource $color7	color7  #000000
-set_from_resource $color8	color8  #000000
-set_from_resource $color9	color9  #000000
-set_from_resource $color10	color10 #000000
-set_from_resource $color11	color11 #000000
-set_from_resource $color12	color12 #000000
-set_from_resource $color13	color13 #000000
-set_from_resource $color14	color14 #000000
-set_from_resource $color15	color15 #000000
-set $transparent		#00000000
+set_from_resource $color0 color0  #000000
+set_from_resource $color1 color1  #000000
+set_from_resource $color2 color2  #000000
+set_from_resource $color3 color3  #000000
+set_from_resource $color4 color4  #000000
+set_from_resource $color5 color5  #000000
+set_from_resource $color6 color6  #000000
+set_from_resource $color7 color7  #000000
+set_from_resource $color8 color8  #000000
+set_from_resource $color9 color9  #000000
+set_from_resource $color10 color10 #000000
+set_from_resource $color11 color11 #000000
+set_from_resource $color12 color12 #000000
+set_from_resource $color13 color13 #000000
+set_from_resource $color14 color14 #000000
+set_from_resource $color15 color15 #000000
+set $transparent #00000000
 
-#                       BORDER		BACKGROUND	TEXT		INDICATOR               CHILD_BORDER
-client.focused		$color9		$color9		$color13	$color14 		$color14
-client.unfocused	$transparent	$color12	$color15	$color9 		$color0
-client.focused_inactive	$transparent	$color12	$color15	$color4 		$color0
-client.urgent		$color1	        $color1 	$color8		$color1 		$color1
-client.background       $color8
+#                        BORDER        BACKGROUND        TEXT        INDICATOR        CHILD_BORDER
+client.focused           $color9       $color9           $color13    $color14         $color14
+client.unfocused         $transparent  $color12          $color15    $color9          $color0
+client.focused_inactive  $transparent  $color12          $color15    $color4          $color0
+client.urgent            $color1       $color1           $color8     $color1          $color1
+client.background        $color8
 
