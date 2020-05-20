@@ -43,7 +43,6 @@ source $ZSH/oh-my-zsh.sh
 
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
-export PATH=$PATH:/usr/local/kubebuilder/bin
 export FZF_DEFAULT_COMMAND='fd --type f'
 export FZF_ALT_C_COMMAND="fd -t d . $HOME"
 
@@ -51,24 +50,22 @@ export GPG_TTY=$(tty)
 
 SSH_ENV="$HOME/.ssh/environment"
 function start_agent {
-        echo "Initialising new SSH agent..."
-        /usr/bin/ssh-agent | sed 's/^echo/#echo/' > "${SSH_ENV}"
-        echo succeeded
-        chmod 600 "${SSH_ENV}"
-        . "${SSH_ENV}" > /dev/null
-        /usr/bin/ssh-add -t 21600 ;
+    echo "Initialising new SSH agent..."
+    /usr/bin/ssh-agent | sed 's/^echo/#echo/' > "${SSH_ENV}"
+    echo succeeded
+    chmod 600 "${SSH_ENV}"
+    . "${SSH_ENV}" > /dev/null
+    /usr/bin/ssh-add -t 21600 ;
 }
 
-if [[ $(uname -r) != *el* ]]; then
-  if [ -f "${SSH_ENV}" ]; then
+if [ -f "${SSH_ENV}" ]; then
     . "${SSH_ENV}" > /dev/null
     ps -ef | grep ${SSH_AGENT_PID} | grep ssh-agent$ > /dev/null || {
-      start_agent;
-    }
-  else
     start_agent;
-  fi
-
-  eval "$(starship init zsh)"
+}
+else
+    start_agent;
 fi
+
+eval "$(starship init zsh)"
 
