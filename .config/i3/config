@@ -66,7 +66,7 @@ bindsym XF86AudioNext exec --no-startup-id "dbus-send --print-reply --dest=org.m
 exec_always --no-startup-id remaps
 
 exec --no-startup-id nitrogen --restore; sleep 1; picom -b
-exec --no-startup-id nm-applet
+exec --no-startup-id /usr/bin/dunst
 exec --no-startup-id /usr/lib/geoclue-2.0/demos/agent
 exec --no-startup-id redshift-gtk
 exec --no-startup-id keepassxc
