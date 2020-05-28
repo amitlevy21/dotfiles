@@ -3,7 +3,7 @@
 alias \
         p="sudo pacman" \
         gs="git status" \
-        dt="/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME" \
+        dt="/usr/bin/git --git-dir=$XDG_CONFIG_HOME/dotfiles.git/ --work-tree=$HOME" \
         dts='dt status' \
         dta='dt add -p' \
         dtc='dt commit' \
