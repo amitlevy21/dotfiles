@@ -3,13 +3,8 @@
 # Set mod key (Mod1=<Alt>, Mod4=<Super>)
 set $mod Mod4
 
-# Set terminal
 set $term $TERMINAL
-
-# Set file manager
 set $file_m $FILE
-
-# Set browser
 set $brow $BROWSER
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
@@ -30,16 +25,9 @@ bindsym $mod+Shift+r restart
 
 # #---Start Applications---# #
 
-# Start a terminal
 bindsym $mod+Return exec --no-startup-id $term
-
-# Start ranger
-bindsym $mod+r exec --no-startup-id "rofi -show combi"
-
-# Start ranger
+bindsym $mod+r exec --no-startup-id rofi -show combi
 bindsym $mod+n exec --no-startup-id $term -e $file_m
-
-# Start web browser
 bindsym $mod+w exec --no-startup-id $brow
 
 # Take a screenshot
@@ -126,14 +114,14 @@ bindsym $mod+Ctrl+Left workspace prev
 
 # Define names for default workspaces for which we configure
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1"
-set $ws2 "2"
-set $ws3 "3"
-set $ws4 "4"
-set $ws5 "5"
-set $ws6 "6"
-set $ws7 "7"
-set $ws8 "8"
+set $ws1 1
+set $ws2 2
+set $ws3 3
+set $ws4 4
+set $ws5 5
+set $ws6 6
+set $ws7 7
+set $ws8 8
 
 # Switch to workspace
 bindsym $mod+1 workspace $ws1
