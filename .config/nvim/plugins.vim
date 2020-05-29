@@ -28,6 +28,8 @@ Plug 'junegunn/fzf.vim'
 " Coloscheme
 Plug 'chriskempson/base16-vim'
 Plug 'rakr/vim-one'
+" Highlight hex codes with their color
+Plug 'chrisbra/Colorizer'
 " Icons
 Plug 'ryanoasis/vim-devicons'
 " File browser
