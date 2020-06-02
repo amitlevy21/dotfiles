@@ -1,3 +1,6 @@
 [user]
 	email = amitlevy347@gmail.com
 	name = Amit Levy
+
+[pull]
+	rebase = false
