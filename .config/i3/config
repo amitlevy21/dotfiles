@@ -56,7 +56,7 @@ bindsym XF86MonBrightnessDown exec --no-startup-id "xbacklight -dec 10; notify-s
 
 # Keyboard mappings
 exec_always --no-startup-id remaps
-exec_always --no-startup-id /usr/bin/light-locker --lock-on-lid --lock-on-suspend
+exec_always --no-startup-id /usr/bin/light-locker --lock-on-lid --lock-on-suspend --lock-after-screensaver=300
 
 exec --no-startup-id nitrogen --restore; sleep 1; picom -b
 exec --no-startup-id /usr/bin/dunst
@@ -152,9 +152,10 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 
 # Set shut down, restart and locking features
 bindsym $mod+0 mode "$mode_system"
-set $mode_system (e)xit, (s)uspend, (h)ibernate, (r)eboot, (Shift+s)hutdown
+set $mode_system (e)xit, (l)ock, (s)uspend, (h)ibernate, (r)eboot, (Shift+s)hutdown
 mode "$mode_system" {
     bindsym e exec --no-startup-id i3exit logout, mode "default"
+    bindsym l exec --no-startup-id i3exit lock, mode "default"
     bindsym s exec --no-startup-id i3exit suspend, mode "default"
     bindsym h exec --no-startup-id i3exit hibernate, mode "default"
     bindsym r exec --no-startup-id i3exit reboot, mode "default"

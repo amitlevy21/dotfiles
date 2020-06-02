@@ -4,6 +4,9 @@ case "$1" in
     logout)
         i3-msg exit
         ;;
+    lock)
+        light-locker-command --lock
+        ;;
     suspend)
         systemctl suspend
         ;;
@@ -17,7 +20,7 @@ case "$1" in
         systemctl poweroff
         ;;
     *)
-        echo "Usage: $0 [logout|suspend|hibernate|reboot|shutdown]"
+        echo "Usage: $0 [logout|lock|suspend|hibernate|reboot|shutdown]"
         exit 2
 esac
 
