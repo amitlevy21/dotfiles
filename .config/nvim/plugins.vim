@@ -29,7 +29,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'chriskempson/base16-vim'
 Plug 'rakr/vim-one'
 " Highlight hex codes with their color
-Plug 'chrisbra/Colorizer'
+Plug 'norcalli/nvim-colorizer.lua'
 " Icons
 Plug 'ryanoasis/vim-devicons'
 " File browser
