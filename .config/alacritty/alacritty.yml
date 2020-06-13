@@ -182,6 +182,8 @@ window:
 #  duration: 0
 #  color: '#ffffff'
 
+background_opacity: 0.5
+
 #selection:
   #semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
 
