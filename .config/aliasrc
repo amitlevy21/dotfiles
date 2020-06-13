@@ -1,23 +1,22 @@
 #!/bin/sh
 
 alias \
-        c='clear'
+        c="clear"
         dexe="docker exec -it" \
         dk="docker" \
         dkc="docker-compose" \
         dt="/usr/bin/git --git-dir=$XDG_CONFIG_HOME/dotfiles.git/ --work-tree=$HOME" \
-        dta='dt add -p' \
-        dtc='dt commit' \
-        dtd='dt diff' \
-        dtp='dt push' \
-        dts='dt status' \
+        dta="dt add -p" \
+        dtc="dt commit" \
+        dtd="dt diff" \
+        dtp="dt push" \
+        dts="dt status" \
         gs="git status" \
         j='cd "$(fd -t d '"'.*'"' $HOME | fzf)"' \
         jg='cd "$(fd -t d '"'.*'"' / | fzf)"' \
         jh='cd "$(fd -t d '"'.*'"' --hidden $HOME | fzf)"' \
-        p="sudo pacman" \
-        t='tmux' \
-        v='vim' \
+        t="tmux" \
+        v="vim" \
         vim="nvim" \
 
 vc() { dt ls-tree --full-tree -r HEAD --name-only | sed "s,^,$HOME/," | fzf | xargs -r $EDITOR ;}
