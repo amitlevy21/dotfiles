@@ -11,3 +11,4 @@ compinit -d $XDG_CACHE_HOME/zsh/zcompdump-$ZSH_VERSION
 
 export NNN_PLUG='f:finder;o:fzopen;c:fzcd;t:preview-tabbed;p:preview-tui;v:imgview;i:imgthumb'
 export NNN_FIFO=/tmp/nnn.fifo
+
