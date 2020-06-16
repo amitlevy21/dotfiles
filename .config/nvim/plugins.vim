@@ -33,8 +33,7 @@ Plug 'norcalli/nvim-colorizer.lua'
 " Icons
 Plug 'ryanoasis/vim-devicons'
 " File browser
-Plug 'scrooloose/nerdtree'
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'mcchrish/nnn.vim'
 " Status bar
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -53,3 +52,4 @@ Plug 'godoctor/godoctor.vim'
 " i3
 Plug 'mboughaba/i3config.vim'
 call plug#end()
+

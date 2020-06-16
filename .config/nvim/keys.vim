@@ -51,9 +51,6 @@ nnoremap <leader>, :split term://zsh<CR>
 
 " Plugins
 
-" NerdTree
-nnoremap <leader>n :NERDTreeToggle<cr>
-
 " Coc
 source $HOME/.config/nvim/coc.vim
 

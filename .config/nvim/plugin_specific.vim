@@ -41,6 +41,7 @@ aug end
 let NERDTreeShowHidden=1
 " Hide files by pattern
 let NERDTreeIgnore=['\.pyc$', '__pycache__']
+let g:nnn#layout = { 'window': { 'width': 0.9, 'height': 0.6, 'highlight': 'Debug' } }
 
 " Auto-save-vim
 let g:auto_save = 1  " enable AutoSave on Vim startup
