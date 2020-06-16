@@ -37,11 +37,7 @@ aug i3config_ft_detection
   au BufNewFile,BufRead ~/.config/i3/config set filetype=i3config
 aug end
 
-" NerdTree
-" Show hidden files
-let NERDTreeShowHidden=1
-" Hide files by pattern
-let NERDTreeIgnore=['\.pyc$', '__pycache__']
+" nnn
 let g:nnn#layout = { 'window': { 'width': 0.9, 'height': 0.6, 'highlight': 'Debug' } }
 
 " Auto-save-vim

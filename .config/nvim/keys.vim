@@ -43,15 +43,10 @@ nnoremap <leader>q :quit<CR>
 nnoremap <leader>w :write<CR>
 nnoremap <leader>x :xit<CR>
 
-nnoremap <leader>e :edit <C-R>=expand('%:p:h') . '/'<CR>
-
 " Terminal
 nnoremap <leader>, :split term://zsh<CR>
 
 " Plugins
-
-" Coc
-source $HOME/.config/nvim/coc.vim
 
 " Fzf
 nmap <leader>f :FZF<cr>
