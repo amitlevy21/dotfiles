@@ -2,6 +2,7 @@
 source $HOME/.config/nvim/coc.vim
 
 " vim-airline - statusbar
+let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 let g:airline_detect_spell = 0                             " Don't show spell in statusbar
 let g:airline#extensions#tmuxline#enabled = 1

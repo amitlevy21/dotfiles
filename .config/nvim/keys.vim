@@ -32,13 +32,12 @@ nmap Q q
 " should consist
 noremap Y y$
 
-" Faster navigation
-" [[ & ]] is for jumping sections
-nmap J ]]
-nmap K [[
-
 " Go to previous buffer
 nnoremap <leader><leader> <C-^>
+
+nnoremap J :bp<CR>
+nnoremap K :bn<CR>
+
 
 nnoremap <leader>q :quit<CR>
 nnoremap <leader>w :write<CR>
