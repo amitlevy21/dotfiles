@@ -6,8 +6,6 @@ Plug 'mhinz/vim-startify'
 Plug 'airblade/vim-rooter'
 " Repeat . for plugins
 Plug 'tpope/vim-repeat'
-"Auto complete
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Commenter
 Plug 'tpope/vim-commentary'
 " Zen mode
