@@ -1,6 +1,5 @@
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'machakann/vim-highlightedyank'
-Plug '907th/vim-auto-save'
 Plug 'tpope/vim-surround'
 " Welcome screen
 Plug 'mhinz/vim-startify'

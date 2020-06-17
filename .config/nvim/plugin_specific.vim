@@ -40,10 +40,6 @@ aug end
 " nnn
 let g:nnn#layout = { 'window': { 'width': 0.9, 'height': 0.6, 'highlight': 'Debug' } }
 
-" Auto-save-vim
-let g:auto_save = 1  " enable AutoSave on Vim startup
-let g:auto_save_silent = 1  " do not display the auto-save notification
-
 " Startify
 let g:startify_change_to_dir = 0                           " Do not cd to file dir
 let g:startify_change_to_vcs_root = 1                      " cd to the root of a vcs project
