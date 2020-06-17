@@ -4,6 +4,7 @@ Plug '907th/vim-auto-save'
 Plug 'tpope/vim-surround'
 " Welcome screen
 Plug 'mhinz/vim-startify'
+Plug 'airblade/vim-rooter'
 " Repeat . for plugins
 Plug 'tpope/vim-repeat'
 "Auto complete
