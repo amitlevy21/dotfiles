@@ -49,7 +49,7 @@ nnoremap <leader>, :split term://zsh<CR>
 " Plugins
 
 " Fzf
-nmap <leader>f :FZF<cr>
+nmap <leader>f :Files<cr>
 nmap <leader>c :Commands<CR>
 nmap <leader>gs :GFiles?<CR>
 nmap <leader>b :Buffers<CR>
