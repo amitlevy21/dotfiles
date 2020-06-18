@@ -4,72 +4,34 @@ window:
     y: 2
 
   # Spread additional padding evenly around the terminal content.
-  #dynamic_padding: false
-
-  # Window decorations
-  #
-  # Values for `decorations`:
-  #     - full: Borders and title bar
-  #     - none: Neither borders nor title bar
-  #
+  dynamic_padding: false
+  # Draw borders for i3
   decorations: full
 
-  # GTK theme variant (Linux/BSD only)
-  #
-  # Override the variant of the GTK theme. Commonly supported values are `dark` and `light`.
-  # Set this to `None` to use the default theme variant.
-  #gtk_theme_variant: None
+font:
+  normal:
+    family: monospace
+    style: Regular
 
-# Font configuration
-#font:
-  # Normal (roman) font face
-  #normal:
-    # Font family
-    #
-    # Default:
-    #   - (macOS) Menlo
-    #   - (Linux/BSD) monospace
-    #   - (Windows) Consolas
-    #family: monospace
-
-    # The `style` can be specified to pick a specific face.
-    #style: Regular
-
-  # Bold font face
-  #bold:
-    # Font family
-    #
+  bold:
     # If the bold family is not specified, it will fall back to the
     # value specified for the normal font.
-    #family: monospace
+    family: monospace
+    style: Bold
 
-    # The `style` can be specified to pick a specific face.
-    #style: Bold
-
-  # Italic font face
-  #italic:
-    # Font family
-    #
+  italic:
     # If the italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    #family: monospace
+    family: monospace
+    style: Italic
 
-    # The `style` can be specified to pick a specific face.
-    #style: Italic
-
-  # Bold italic font face
-  #bold_italic:
-    # Font family
-    #
+  bold_italic:
     # If the bold italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    #family: monospace
+    family: monospace
+    style: Bold Italic
 
-    # The `style` can be specified to pick a specific face.
-    #style: Bold Italic
-
-  # Point size
-  #size: 11.0
+  size: 8.0
 
   # Glyph offset determines the locations of the glyphs within their cells with
   # the default being at the bottom. Increasing `x` moves the glyph to the right,
@@ -78,28 +40,18 @@ window:
   #  x: 0
   #  y: 0
 
-# Colors (Tomorrow Night Bright)
-#colors:
-  # Default colors
-  #primary:
-  #  background: '#000000'
-  #  foreground: '#eaeaea'
-
-    # Bright and dim foreground colors
-    #
-    # The dimmed foreground color is calculated automatically if it is not present.
-    # If the bright foreground color is not set, or `draw_bold_text_with_bright_colors`
-    # is `false`, the normal foreground color will be used.
+colors:
+  primary:
+    background: '#282828'
+    foreground: '#eBDBB2'
     #dim_foreground: '#9a9a9a'
     #bright_foreground: '#ffffff'
 
-  # Cursor colors
-  #
   # Colors which should be used to draw the terminal cursor. If these are unset,
   # the cursor color will be the inverse of the cell color.
-  #cursor:
-  #  text: '#000000'
-  #  cursor: '#ffffff'
+  cursor:
+    text: '#FFB536'
+    cursor: '#ADD8e6'
 
   # Selection colors
   #
@@ -110,51 +62,37 @@ window:
   #  text: '#eaeaea'
   #  background: '#404040'
 
-  # Normal colors
-  #normal:
-  #  black:   '#000000'
-  #  red:     '#d54e53'
-  #  green:   '#b9ca4a'
-  #  yellow:  '#e6c547'
-  #  blue:    '#7aa6da'
-  #  magenta: '#c397d8'
-  #  cyan:    '#70c0ba'
-  #  white:   '#eaeaea'
+  normal:
+    black:   '#191726'
+    red:     '#FF5C57'
+    green:   '#FFB536'
+    yellow:  '#FFB536'
+    blue:    '#5AF78E'
+    magenta: '#9AEDFE'
+    cyan:    '#57C7FF'
+    white:   '#FFFFFF'
 
-  # Bright colors
-  #bright:
-  #  black:   '#666666'
-  #  red:     '#ff3334'
-  #  green:   '#9ec400'
-  #  yellow:  '#e7c547'
-  #  blue:    '#7aa6da'
-  #  magenta: '#b77ee0'
-  #  cyan:    '#54ced6'
-  #  white:   '#ffffff'
+  bright:
+    black:   '#191726'
+    red:     '#FF5C57'
+    green:   '#5AF78E'
+    yellow:  '#FFB536'
+    blue:    '#57C7FF'
+    magenta: '#c397d8'
+    cyan:    '#9AEDFE'
+    white:   '#FFFFFF'
 
-  # Dim colors
-  #
   # If the dim colors are not set, they will be calculated automatically based
   # on the `normal` colors.
-  #dim:
-  #  black:   '#000000'
-  #  red:     '#8c3336'
-  #  green:   '#7a8530'
-  #  yellow:  '#97822e'
-  #  blue:    '#506d8f'
-  #  magenta: '#80638e'
-  #  cyan:    '#497e7a'
-  #  white:   '#9a9a9a'
-
-  # Indexed Colors
-  #
-  # The indexed colors include all colors from 16 to 256.
-  # When these are not set, they're filled with sensible defaults.
-  #
-  # Example:
-  #   `- { index: 16, color: '#ff00ff' }`
-  #
-  #indexed_colors: []
+  dim:
+    black:   '#000000'
+    red:     '#8c3336'
+    green:   '#7a8530'
+    yellow:  '#97822e'
+    blue:    '#506d8f'
+    magenta: '#80638e'
+    cyan:    '#497e7a'
+    white:   '#9a9a9a'
 
 # Visual Bell
 #
@@ -182,19 +120,20 @@ window:
 #  duration: 0
 #  color: '#ffffff'
 
-background_opacity: 0.5
+background_opacity: 0.95
 
-#selection:
-  #semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
+selection:
+  semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
 
   # When set to `true`, selected text will be copied to the primary clipboard.
-  #save_to_clipboard: false
+  save_to_clipboard: true
 
 # Allow terminal applications to change Alacritty's window title.
-#dynamic_title: true
+dynamic_title: true
 
 cursor:
   style: Block
+  thickness: 0.15
 
   # If this is `true`, the cursor will be rendered as a hollow box when the
   # window is not focused.
@@ -202,42 +141,8 @@ cursor:
 
 live_config_reload: true
 
-#mouse:
-  # Click settings
-  #
-  # The `double_click` and `triple_click` settings control the time
-  # alacritty should wait for accepting multiple clicks as one double
-  # or triple click.
-  #double_click: { threshold: 300 }
-  #triple_click: { threshold: 300 }
-
-  # If this is `true`, the cursor is temporarily hidden when typing.
-  #hide_when_typing: false
-
-# Mouse bindings
-#
-# Mouse bindings are specified as a list of objects, much like the key
-# bindings further below.
-#
-# To trigger mouse bindings when an application running within Alacritty captures the mouse, the
-# `Shift` modifier is automatically added as a requirement.
-#
-# Each mouse binding will specify a:
-#
-# - `mouse`:
-#
-#   - Middle
-#   - Left
-#   - Right
-#   - Numeric identifier such as `5`
-#
-# - `action` (see key bindings)
-#
-# And optionally:
-#
-# - `mods` (see key bindings)
-#mouse_bindings:
-#  - { mouse: Middle, action: PasteSelection }
+mouse_bindings:
+  - { mouse: Right, action: PasteSelection }
 
 # Key bindings
 #
@@ -298,9 +203,6 @@ live_config_reload: true
 #   - ClearLogNotice
 #   - ReceiveChar
 #   - None
-#
-#   (macOS only):
-#   - ToggleSimpleFullscreen: Enters fullscreen without occupying another space
 #
 # - `command`: Fork and execute a specified command plus arguments
 #
