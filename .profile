@@ -3,7 +3,7 @@
 
 export EDITOR=/usr/bin/nvim
 export BROWSER=/usr/bin/google-chrome-stable
-export TERMINAL=/usr/local/bin/st
+export TERMINAL=/usr/bin/alacritty
 export FILE=/usr/bin/pcmanfm
 
 export XDG_CONFIG_HOME=$HOME/.config
