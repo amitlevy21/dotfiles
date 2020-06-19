@@ -1,0 +1,15 @@
+#!/bin/sh
+
+
+tmpf=/tmp/i3toggle
+
+if [[ -f $tmpf ]]; then
+  msg="tile vertical"
+  rm -rf $tmpf
+else
+  msg="tile horizontal"
+  touch $tmpf
+fi
+
+dunstify -r 4492 -u normal $msg
+

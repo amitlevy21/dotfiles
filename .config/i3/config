@@ -95,7 +95,7 @@ bindsym $mod+Shift+Tab move container to workspace back_and_forth; workspace bac
 floating_modifier $mod
 
 # Split orientation
-bindsym $mod+t split toggle
+bindsym $mod+t "split toggle; exec i3toggle"
 
 # Toggle fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
