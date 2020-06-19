@@ -63,7 +63,7 @@ nmap <leader>h :History<CR>
 nmap <leader>H :Helptags<CR>
 nmap <leader>t :BTags<CR>
 nmap <leader>T :Tags<CR>
-nmap <Leader>/ :Rg<Space>
+nmap <Leader>/ :Rg<Space><CR>
 
 " Fugitive
 nmap <leader>gb :Gblame<CR>
