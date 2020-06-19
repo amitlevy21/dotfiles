@@ -43,7 +43,7 @@ font:
 colors:
   primary:
     background: '#282828'
-    foreground: '#eBDBB2'
+    foreground: '#EBDBB2'
     #dim_foreground: '#9a9a9a'
     #bright_foreground: '#ffffff'
 
@@ -73,7 +73,7 @@ colors:
     white:   '#FFFFFF'
 
   bright:
-    black:   '#191726'
+    black:   '#404040'
     red:     '#FF5C57'
     green:   '#5AF78E'
     yellow:  '#FFB536'
