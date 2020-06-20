@@ -109,10 +109,6 @@ bindsym $mod+minus scratchpad show
 # Toggle sticky
 bindsym $mod+Shift+s sticky toggle
 
-# Navigate workspaces next / previous
-bindsym $mod+Ctrl+Right workspace next
-bindsym $mod+Ctrl+Left workspace prev
-
 # Define names for default workspaces for which we configure
 # We use variables to avoid repeating the names in multiple places.
 set $ws1 1
@@ -144,12 +140,6 @@ bindsym $mod+Shift+6 move container to workspace $ws6
 bindsym $mod+Shift+7 move container to workspace $ws7
 bindsym $mod+Shift+8 move container to workspace $ws8
 
-# Switch to workspace with urgent window automatically
-for_window [urgent=latest] focus
-
-# Exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
-
 # Set shut down, restart and locking features
 bindsym $mod+0 mode "$mode_system"
 set $mode_system (e)xit, (l)ock, (s)uspend, (h)ibernate, (r)eboot, (Shift+s)hutdown
@@ -170,31 +160,32 @@ mode "$mode_system" {
 
 # Open specific applications in floating mode
 for_window [title="alsamixer"] floating enable border pixel 1
-for_window [class="calamares"] floating enable border normal
-for_window [class="Clipgrab"] floating enable
 for_window [title="File Transfer*"] floating enable
-for_window [class="Galculator"] floating enable border pixel 1
 for_window [class="GParted"] floating enable border normal
-for_window [title="i3_help"] floating enable sticky enable border normal
-for_window [class="Lightdm-settings"] floating enable
-for_window [class="Lxappearance"] floating enable sticky enable border normal
-for_window [class="Manjaro-hello"] floating enable
-for_window [class="Manjaro Settings Manager"] floating enable border normal
-for_window [title="MuseScore: Play Panel"] floating enable
 for_window [class="Nitrogen"] floating enable sticky enable border normal
 for_window [class="Oblogout"] fullscreen enable
-for_window [class="octopi"] floating enable
-for_window [title="About Pale Moon"] floating enable
-for_window [class="Pamac-manager"] floating enable
 for_window [class="Pavucontrol"] floating enable
 for_window [class="qt5ct"] floating enable sticky enable border normal
 for_window [class="Qtconfig-qt4"] floating enable sticky enable border normal
 for_window [class="Simple-scan"] floating enable border normal
 for_window [class="(?i)System-config-printer.py"] floating enable border normal
-for_window [class="Skype"] floating enable border normal
 for_window [class="Timeset-gui"] floating enable border normal
 for_window [class="(?i)virtualbox"] floating enable border normal
-for_window [class="Xfburn"] floating enable
+
+# #---Colors---# #
+
+set $black #191726
+set $gray #333333
+set $dark_gray #222222
+set $red #FF5C57
+set $yellow #FFB536
+set $color3 #F3F99D
+set $green #5AF78E
+set $cyan #9AEDFE
+set $blue #0088CC
+set $white #FFFFFF
+set $brown #928374
+set $transparent #00000000
 
 # #---Bar-- # #
 
@@ -204,13 +195,11 @@ bar {
   position top
   status_command /bin/i3status-rs $HOME/.config/i3/status.toml
   colors {
-        separator #666666
-        background #222222
-        statusline #dddddd
-        focused_workspace #0088CC #0088CC #ffffff
-        active_workspace #333333 #333333 #ffffff
-        inactive_workspace #333333 #333333 #888888
-        urgent_workspace #2f343a #900000 #ffffff
+        background $dark_gray
+        focused_workspace $blue $blue $white
+        active_workspace $gray $gray $white
+        inactive_workspace $gray $gray $brown
+        urgent_workspace $gray $red $white
     }
 }
 
@@ -223,31 +212,8 @@ bindsym $mod+m bar mode toggle
 gaps inner 14
 gaps outer -2
 
-# #---Colors---# #
-
-# Set Xresources colors:
-set_from_resource $color0 color0  #000000
-set_from_resource $color1 color1  #000000
-set_from_resource $color2 color2  #000000
-set_from_resource $color3 color3  #000000
-set_from_resource $color4 color4  #000000
-set_from_resource $color5 color5  #000000
-set_from_resource $color6 color6  #000000
-set_from_resource $color7 color7  #000000
-set_from_resource $color8 color8  #000000
-set_from_resource $color9 color9  #000000
-set_from_resource $color10 color10 #000000
-set_from_resource $color11 color11 #000000
-set_from_resource $color12 color12 #000000
-set_from_resource $color13 color13 #000000
-set_from_resource $color14 color14 #000000
-set_from_resource $color15 color15 #000000
-set $transparent #00000000
-
-#                        BORDER        BACKGROUND        TEXT        INDICATOR        CHILD_BORDER
-client.focused           $color9       $color9           $color13    $color14         $color14
-client.unfocused         $transparent  $color12          $color15    $color9          $color0
-client.focused_inactive  $transparent  $color12          $color15    $color4          $color0
-client.urgent            $color1       $color1           $color8     $color1          $color1
-client.background        $color8
+#                        BORDER        BACKGROUND        TEXT        INDICATOR     CHILD_BORDER
+client.focused           $red          $red              $cyan       $blue         $blue
+client.unfocused         $transparent  $transparent      $white      $black        $black
+client.urgent            $red          $red              $brown      $red          $red
 
