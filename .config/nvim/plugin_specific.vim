@@ -34,9 +34,6 @@ aug i3config_ft_detection
   au BufNewFile,BufRead ~/.config/i3/config set filetype=i3config
 aug end
 
-" nnn
-let g:nnn#layout = { 'window': { 'width': 0.9, 'height': 0.6, 'highlight': 'Debug' } }
-
 " Startify
 let g:startify_change_to_dir = 0                           " Do not cd to file dir
 let g:startify_change_to_vcs_root = 1                      " cd to the root of a vcs project
