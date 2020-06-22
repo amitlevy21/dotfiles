@@ -3,7 +3,8 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 let g:airline_detect_spell = 0                             " Don't show spell in statusbar
 let g:airline#extensions#tmuxline#enabled = 1
-let airline#extensions#tmuxline#snapshot_file = "~/.config/.tmux-status.conf"
+let airline#extensions#tmuxline#snapshot_file = "~/.config/tmux/tmux-status.conf"
+let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
 
 if !exists('g:airline_symbols')
   let g:airline_symbols = {}
