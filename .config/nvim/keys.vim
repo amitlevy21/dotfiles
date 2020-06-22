@@ -23,7 +23,7 @@ function! Cycle_numbering() abort
   endif
 endfunction
 
-nnoremap <leader>r :call Cycle_numbering()<CR>
+nnoremap <leader>0 :call Cycle_numbering()<CR>
 
 " Accidental Q when exiting should exit
 nmap Q q
@@ -44,7 +44,8 @@ nnoremap <leader>w :write<CR>
 nnoremap <leader>x :xit<CR>
 
 " Terminal
-nnoremap <leader>, :split term://zsh<CR>
+nnoremap <leader>t :call FloatTerm()<CR>
+nnoremap <leader>lg :call FloatTerm("lazygit")<CR>
 
 " Allow navigation in terminal mode
 tnoremap <C-h> <C-\><C-N><C-w>h
@@ -61,20 +62,21 @@ nmap <leader>gs :GFiles?<CR>
 nmap <leader>b :Buffers<CR>
 nmap <leader>h :History<CR>
 nmap <leader>H :Helptags<CR>
-nmap <leader>t :BTags<CR>
+nmap <leader>bt :BTags<CR>
 nmap <leader>T :Tags<CR>
-nmap <Leader>/ :Rg<Space><CR>
+nmap <leader>/ :Rg<Space><CR>
+nmap <leader>m :Maps<Space><CR>
 
 " Fugitive
 nmap <leader>gb :Gblame<CR>
 
 " Vimux
 " Prompt for a command to run
-map <Leader>vp :VimuxPromptCommand<CR>
+map <leader>vp :VimuxPromptCommand<CR>
 " Run last command executed by VimuxRunCommand
-map <Leader>vl :VimuxRunLastCommand<CR>
+map <leader>vl :VimuxRunLastCommand<CR>
 " Inspect runner pane
-map <Leader>vi :VimuxInspectRunner<CR><Paste>
+map <leader>vi :VimuxInspectRunner<CR><Paste>
 " Zoom the tmux runner pane
-map <Leader>vz :VimuxZoomRunner<CR>
+map <leader>vz :VimuxZoomRunner<CR>
 

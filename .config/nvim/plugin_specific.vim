@@ -11,6 +11,7 @@ endif
 let g:airline_symbols.linenr = ''
 let g:airline_symbols.maxlinenr = ''
 let g:airline_skip_empty_sections = 1
+
 " This is for tmuxline actually, the default color for section b does not look
 " good for the current window shown in tmuxline
 let g:airline_theme_patch_func = 'AirlineThemePatch'
@@ -65,8 +66,7 @@ let g:gitgutter_map_keys = 0                               " Disable plug bindin
 " Show prompt more naturally
 let $FZF_DEFAULT_OPTS = '--layout=reverse'
 
-" Open FZF in floating window
-function! CreateCenteredFloatingWindow()
+function! FloatWin()
     let width = min([&columns - 4, max([80, &columns - 20])])
     let height = min([&lines - 4, max([20, &lines - 10])])
     let top = ((&lines - height) / 2) - 1
@@ -89,5 +89,18 @@ function! CreateCenteredFloatingWindow()
     au BufWipeout <buffer> exe 'bw '.s:buf
 endfunction
 
-let g:fzf_layout = { 'window': 'call CreateCenteredFloatingWindow()' }
+function! FloatTerm(...)
+    call FloatWin()
+    if a:0 == 0
+        call termopen("zsh")
+    else
+        call termopen(a:1)
+    endif
+    startinsert
+    " Close with ESC
+    tnoremap <buffer> <silent> <Esc> <C-\><C-n><CR>:bw!<CR>
+endfunction
+
+" Open FZF in floating window
+let g:fzf_layout = { 'window': 'call FloatWin()' }
 
