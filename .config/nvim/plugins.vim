@@ -29,6 +29,7 @@ Plug 'rbgrouleff/bclose.vim' " need in ranger
 " Colorscheme
 Plug 'chriskempson/base16-vim'
 Plug 'rakr/vim-one'
+Plug 'ntk148v/vim-horizon'
 " Highlight hex codes with their color
 Plug 'norcalli/nvim-colorizer.lua'
 " Icons
