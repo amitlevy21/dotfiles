@@ -20,15 +20,19 @@ Plug 'janko-m/vim-test'
 " Fuzzy finder
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
-" Coloscheme
+" File Manager
+Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'kristijanhusak/defx-icons'
+Plug 'kristijanhusak/defx-git'
+Plug 'francoiscabrol/ranger.vim'
+Plug 'rbgrouleff/bclose.vim' " need in ranger
+" Colorscheme
 Plug 'chriskempson/base16-vim'
 Plug 'rakr/vim-one'
 " Highlight hex codes with their color
 Plug 'norcalli/nvim-colorizer.lua'
 " Icons
 Plug 'ryanoasis/vim-devicons'
-" File browser
-Plug 'mcchrish/nnn.vim'
 " Status bar
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'

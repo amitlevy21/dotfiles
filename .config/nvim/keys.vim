@@ -80,3 +80,6 @@ map <leader>vi :VimuxInspectRunner<CR><Paste>
 " Zoom the tmux runner pane
 map <leader>vz :VimuxZoomRunner<CR>
 
+" Ranger
+nnoremap <leader>r :RangerWorkingDirectory<CR>
+
