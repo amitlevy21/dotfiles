@@ -83,3 +83,5 @@ map <leader>vz :VimuxZoomRunner<CR>
 " Ranger
 nnoremap <leader>r :RangerWorkingDirectory<CR>
 
+" Toggle Defx
+map <leader>n :Defx<CR>

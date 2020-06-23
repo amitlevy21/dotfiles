@@ -105,18 +105,15 @@ endfunction
 " Open FZF in floating window
 let g:fzf_layout = { 'window': 'call FloatWin()' }
 
-map <Space>sw call RangerChooser(expand("<amatch>"))
-call defx#custom#option('_', {
-      \ 'split': 'vertical',
-      \ 'winwidth': 30,
-      \ 'toggle': 1,
-      \ 'direction': 'topleft',
-      \ })
-
-" Toggle Defx using Ctrl + Space
-map <C-space>
-\ :<C-u>Defx -show-ignored-files -toggle -split=floating -columns=mark:git:indent:icons:filename:type<CR>
+" Defx
 autocmd FileType defx call s:defx_settings()
+call defx#custom#option('_', {
+    \ 'winwidth': 45,
+    \ 'columns': 'mark:indent:icon:icons:filename:git',
+    \ 'split': 'floating',
+    \ 'toggle': 1,
+    \ 'resume': 1,
+    \ })
 function! s:defx_settings() abort
   " Define mappings
   nnoremap <silent><buffer><expr> <CR>
