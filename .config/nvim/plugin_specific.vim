@@ -110,7 +110,7 @@ autocmd FileType defx call s:defx_settings()
 call defx#custom#option('_', {
     \ 'winwidth': 45,
     \ 'columns': 'mark:indent:icon:icons:filename:git',
-    \ 'split': 'floating',
+    \ 'split': 'vertical',
     \ 'toggle': 1,
     \ 'resume': 1,
     \ })
