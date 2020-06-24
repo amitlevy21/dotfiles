@@ -128,8 +128,8 @@ selection:
   # When set to `true`, selected text will be copied to the primary clipboard.
   save_to_clipboard: true
 
-# Allow terminal applications to change Alacritty's window title.
-dynamic_title: true
+# Don't allow terminal applications to change Alacritty's window title.
+dynamic_title: false
 
 cursor:
   style: Block
