@@ -38,7 +38,6 @@ nnoremap <leader><leader> <C-^>
 nnoremap J :bp<CR>
 nnoremap K :bn<CR>
 
-
 nnoremap <leader>q :quit<CR>
 nnoremap <leader>w :write<CR>
 nnoremap <leader>x :xit<CR>
@@ -83,5 +82,6 @@ map <leader>vz :VimuxZoomRunner<CR>
 " Ranger
 nnoremap <leader>r :RangerWorkingDirectory<CR>
 
-" Toggle Defx
-map <leader>n :Defx<CR>
+" NERDTree
+map <leader>n :NERDTreeToggle<CR>
+

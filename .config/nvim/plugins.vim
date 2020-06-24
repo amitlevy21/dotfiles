@@ -21,11 +21,9 @@ Plug 'janko-m/vim-test'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 " File Manager
-Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'kristijanhusak/defx-icons'
-Plug 'kristijanhusak/defx-git'
+Plug 'preservim/nerdtree'
 Plug 'francoiscabrol/ranger.vim'
-Plug 'rbgrouleff/bclose.vim' " need in ranger
+Plug 'rbgrouleff/bclose.vim' " needed in ranger
 " Colorscheme
 Plug 'chriskempson/base16-vim'
 Plug 'rakr/vim-one'
