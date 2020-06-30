@@ -63,9 +63,6 @@ let g:VimuxHeight = "40"
 let g:gitgutter_map_keys = 0                               " Disable plug bindings, which also use <leader>h prefix that slows other bindings
 
 " NERDTree
-autocmd StdinReadPre * let s:std_in=1
-" Start when vim starts
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 " Show hidden files
 let NERDTreeShowHidden=1
 
