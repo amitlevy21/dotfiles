@@ -17,4 +17,5 @@ export LESSHISTFILE="$XDG_CACHE_HOME"/less/history
 
 # Adds `~/.scripts` and all subdirectories to $PATH
 export PATH="$PATH:$(du "$XDG_CONFIG_HOME/scripts/" | cut -f2 | tr '\n' ':' | sed 's/:*$//')"
+export PATH="$PATH:$HOME/.local/bin"
 
