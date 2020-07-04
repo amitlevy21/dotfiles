@@ -117,3 +117,22 @@ let g:ranger_map_keys = 0
 let g:bclose_no_plugin_maps = 1
 let g:ranger_replace_netrw = 1 " Open ranger when opening a dir with vim
 
+" Deoplete
+let g:deoplete#enable_at_startup = 1
+" Choose completion from menu, or jump snippet completion with tab
+" Note: It must be "imap" and "smap".  It uses <Plug> mappings.
+imap <expr><TAB>
+ \ pumvisible() ? "\<C-n>" :
+ \ neosnippet#expandable_or_jumpable() ?
+ \    "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
+smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
+\ "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
+" Needed to expand snippets
+imap <expr><CR> neosnippet#expandable() ?
+\ "\<Plug>(neosnippet_expand)" : "\<CR>"
+" For conceal markers.
+if has('conceal')
+  set conceallevel=2 concealcursor=niv
+endif
+" Close preview after completion
+autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | silent! pclose | endif
