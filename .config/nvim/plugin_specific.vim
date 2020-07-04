@@ -66,8 +66,6 @@ let g:gitgutter_map_keys = 0                               " Disable plug bindin
 " Show hidden files
 let NERDTreeShowHidden=1
 
-" Close vim if NERDTree is the only window
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 " FZF
 
 " Show prompt more naturally
