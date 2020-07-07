@@ -46,6 +46,19 @@ nnoremap <leader>x :xit<CR>
 nnoremap <leader>t :call FloatTerm()<CR>
 nnoremap <leader>lg :call FloatTerm("lazygit")<CR>
 
+" Normal mode with escape
+tnoremap <Esc> <C-\><C-n>
+" Start terminal in insert mode
+au BufEnter * if &buftype == 'terminal' | :startinsert | endif
+
+" open terminal on ctrl+n
+function! OpenTerminal()
+  split term://zsh
+  resize 10
+endfunction
+
+nnoremap <leader>, :call OpenTerminal()<CR>
+
 " Allow navigation in terminal mode
 tnoremap <C-h> <C-\><C-N><C-w>h
 tnoremap <C-j> <C-\><C-N><C-w>j
