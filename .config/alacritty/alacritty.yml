@@ -31,7 +31,7 @@ font:
     family: Source Code Pro
     style: Bold Italic
 
-  size: 8.0
+  size: 10.0
 
   # Glyph offset determines the locations of the glyphs within their cells with
   # the default being at the bottom. Increasing `x` moves the glyph to the right,
