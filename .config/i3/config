@@ -191,7 +191,7 @@ set $transparent #00000000
 
 bar {
   tray_output none
-  font pango:DejaVu Sans Mono, FontAwesome 14
+  font pango:FontAwesome 14, Source Code Pro 11
   position top
   status_command /bin/i3status-rs $HOME/.config/i3/status.toml
   colors {

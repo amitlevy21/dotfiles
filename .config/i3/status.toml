@@ -6,7 +6,10 @@ idle_fg = "#FFFFFF"
 alternating_tint_bg = "#0088CC"
 
 [icons]
-name = "awesome"
+name = "awesome5"
+
+[[block]]
+block = "pomodoro"
 
 [[block]]
 block = "music"
@@ -20,12 +23,12 @@ max_width = 21
 [[block]]
 block = "disk_space"
 path = "/home"
-alias = "/home"
+alias = ""
 info_type = "available"
 unit = "GB"
 interval = 20
-warning = 20.0
-alert = 10.0
+warning = 5.0
+alert = 2.0
 
 [[block]]
 block = "memory"
@@ -46,6 +49,12 @@ interval = 5
 
 [[block]]
 block = "sound"
+
+[[block]]
+block = "backlight"
+
+[[block]]
+block = "battery"
 
 [[block]]
 block = "time"
