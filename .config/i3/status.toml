@@ -9,9 +9,6 @@ alternating_tint_bg = "#0088CC"
 name = "awesome5"
 
 [[block]]
-block = "pomodoro"
-
-[[block]]
 block = "music"
 player = "spotify"
 buttons = ["prev", "play", "next"]
