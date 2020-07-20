@@ -1,0 +1,12 @@
+configuration {
+  modi: "window,drun,combi";
+  combi-modi: "window,drun";
+  show-icons: true;
+  theme: "/usr/share/rofi/themes/Monokai.rasi";
+  combi-hide-mode-prefix: true;
+}
+
+window {
+  transparency: "real";
+}
+
