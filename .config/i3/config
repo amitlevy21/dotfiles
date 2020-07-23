@@ -60,7 +60,6 @@ exec_always --no-startup-id /usr/bin/light-locker --lock-on-lid --lock-on-suspen
 
 exec --no-startup-id nitrogen --restore; sleep 1; picom -b
 exec --no-startup-id /usr/bin/dunst
-exec --no-startup-id /usr/lib/geoclue-2.0/demos/agent
 exec --no-startup-id redshift-gtk
 exec --no-startup-id keepassxc
 
