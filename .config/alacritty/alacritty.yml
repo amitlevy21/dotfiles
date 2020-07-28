@@ -1,7 +1,7 @@
 window:
   padding:
-    x: 2
-    y: 2
+    x: 4
+    y: 4
 
   # Spread additional padding evenly around the terminal content.
   dynamic_padding: false
@@ -10,28 +10,28 @@ window:
 
 font:
   normal:
-    family: Source Code Pro
+    family: MesloLGL Nerd Font Mono
     style: Regular
 
   bold:
     # If the bold family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: Source Code Pro
+    family: MesloLGL Nerd Font Mono
     style: Bold
 
   italic:
     # If the italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: Source Code Pro
+    family: MesloLGL Nerd Font Mono
     style: Italic
 
   bold_italic:
     # If the bold italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: Source Code Pro
+    family: MesloLGL Nerd Font Mono
     style: Bold Italic
 
-  size: 10.0
+  size: 14.0
 
   # Glyph offset determines the locations of the glyphs within their cells with
   # the default being at the bottom. Increasing `x` moves the glyph to the right,
@@ -120,7 +120,7 @@ colors:
 #  duration: 0
 #  color: '#ffffff'
 
-background_opacity: 0.95
+background_opacity: 0.80
 
 selection:
   semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"

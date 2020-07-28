@@ -8,6 +8,10 @@ alternating_tint_bg = "#0088CC"
 [icons]
 name = "awesome5"
 
+[icons.overrides]
+net_wired = ""
+net_wireless = ""
+
 [[block]]
 block = "music"
 player = "spotify"
@@ -46,12 +50,6 @@ interval = 5
 
 [[block]]
 block = "sound"
-
-[[block]]
-block = "backlight"
-
-[[block]]
-block = "battery"
 
 [[block]]
 block = "time"

@@ -180,7 +180,7 @@ set $red #FF5C57
 set $yellow #FFB536
 set $color3 #F3F99D
 set $green #5AF78E
-set $cyan #9AEDFE
+set $cyan #00E0FE
 set $blue #0088CC
 set $white #FFFFFF
 set $brown #928374
@@ -212,7 +212,7 @@ gaps inner 14
 gaps outer -2
 
 #                        BORDER        BACKGROUND        TEXT        INDICATOR     CHILD_BORDER
-client.focused           $red          $red              $cyan       $blue         $blue
+client.focused           $red          $red              $cyan       $cyan         $cyan
 client.unfocused         $transparent  $transparent      $white      $black        $black
 client.urgent            $red          $red              $brown      $red          $red
 
