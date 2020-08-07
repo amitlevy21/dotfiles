@@ -2,7 +2,7 @@
     frame_width = 1
     frame_color = "#788388"
 
-    font = Noto Sans 10
+    font = Source Code Pro 10
 
     # Allow a small subset of html markup:
     #   <b>bold</b>
@@ -42,7 +42,6 @@
     # Set to 0 to disable.
     bounce_freq = 5
 
-
     # Show age of message if message is older than show_age_threshold
     # seconds.
     # Set to -1 to disable.
@@ -54,7 +53,6 @@
 
     # Ignore newlines '\n' in notifications.
     ignore_newline = no
-
 
     # The geometry of the window:
     #   [{width}]x{height}[+/-{x}+/-{y}]
@@ -145,13 +143,13 @@
     dmenu = /usr/bin/dmenu -p dunst:
 
     # Browser for opening urls in context menu.
-    browser = palemoon
+    browser = /usr/bin/google-chrome-stable
 
     # Align icons left/right/off
     icon_position = left
 
     # Paths to default icons.
-    icon_path = /usr/share/icons/Adwaita/16x16/status/:/usr/share/icons/Adwaita/16x16/devices/
+    icon_path = /usr/share/icons/Adwaita/16x16/actions/:/usr/share/icons/Adwaita/16x16/devices/
 
     # Limit icons size.
     max_icon_size=128
