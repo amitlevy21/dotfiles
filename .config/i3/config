@@ -56,7 +56,7 @@ bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 10
 
 # Keyboard mappings
 exec_always --no-startup-id remaps
-exec_always --no-startup-id /usr/bin/light-locker --lock-on-lid --lock-on-suspend --lock-after-screensaver=300
+exec_always --no-startup-id /usr/bin/light-locker --lock-on-lid --lock-on-suspend --lock-after-screensaver=900
 
 exec --no-startup-id nitrogen --restore; sleep 1; picom -b
 exec --no-startup-id /usr/bin/dunst
