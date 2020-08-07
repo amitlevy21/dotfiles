@@ -4,7 +4,7 @@ export ZSH="/usr/share/oh-my-zsh"
 ZSH_THEME="robbyrussell"
 
 # Uncomment the following line to use case-sensitive completion.
-CASE_SENSITIVE="true"
+#CASE_SENSITIVE="true"
 
 # Uncomment the following line to use hyphen-insensitive completion.
 # Case-sensitive completion must be off. _ and - will be interchangeable.
@@ -23,7 +23,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git fzf last-working-dir docker docker-compose)
+plugins=(git fzf docker docker-compose)
 
 source $ZSH/oh-my-zsh.sh
 
