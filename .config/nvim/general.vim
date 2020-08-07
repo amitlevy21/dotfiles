@@ -20,10 +20,8 @@ set tabstop=4                         " Set tab size
 set mouse=n                           " Easy resize for splits
 set expandtab                         " Replace tabs with spaces
 set shiftwidth=2                      " Size of indent for new lines
-
-" Line break icon
-set showbreak=↪
-set list                              " show whitespace
+set showbreak=↪                       " Line break icon
+set list                              " show whitespaces
 set listchars=nbsp:⦸                  " CIRCLED REVERSE SOLIDUS (U+29B8, UTF-8: E2 A6 B8)
 set listchars+=tab:▷\                 " WHITE RIGHT-POINTING TRIANGLE (U+25B7, UTF-8: E2 96 B7)
 set listchars+=extends:»              " RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK (U+00BB, UTF-8: C2 BB)
