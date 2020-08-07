@@ -42,6 +42,7 @@ Plug 'benmills/vimux'
 " Git
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
+Plug 'kdheepak/lazygit.nvim'
 " LSP
 Plug 'neovim/nvim-lsp'
 Plug 'Shougo/deoplete.nvim'

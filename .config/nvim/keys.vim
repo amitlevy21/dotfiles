@@ -44,10 +44,10 @@ nnoremap <leader>x :xit<CR>
 
 " Terminal
 nnoremap <leader>t :call FloatTerm()<CR>
-nnoremap <leader>lg :call FloatTerm("lazygit")<CR>
+nnoremap <leader>lg :LazyGit<CR>
 
 " Normal mode with escape
-tnoremap <Esc> <C-\><C-n>
+tnoremap <leader><Esc> <C-\><C-n>
 " Start terminal in insert mode
 au BufEnter * if &buftype == 'terminal' | :startinsert | endif
 
