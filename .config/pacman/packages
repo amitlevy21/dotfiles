@@ -30,6 +30,7 @@ pcmanfm
 picom
 pulseaudio
 pulseaudio-bluetooth
+python-ueberzug
 python-pynvim
 qbittorrent
 ranger
@@ -43,6 +44,7 @@ unzip
 wget
 w3m
 xarchiver
+xbindkeys
 xcape
 xclip
 xorg
