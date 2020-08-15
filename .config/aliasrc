@@ -12,9 +12,9 @@ alias \
         dtp="dt push" \
         dts="dt status" \
         gs="git status" \
-        j='cd "$(fd -t d '"'.*'"' $HOME | fzf)"' \
-        jg='cd "$(fd -t d '"'.*'"' / | fzf)"' \
-        jh='cd "$(fd -t d '"'.*'"' --hidden $HOME | fzf)"' \
+        j='cd "$(fd -t d -E go '"'.*'"' $HOME | fzf)"' \
+        jg='cd "$(fd -t d -E $HOME -E /run -E /proc -E /sys -E /dev '"'.*'"' / | fzf)"' \
+        jh='cd "$(fd -t d --regex '"'^\.'"' --hidden -E .cargo -E .cache -E go $HOME | fzf)"' \
         lg="lazygit" \
         t="tmux" \
         v="vim" \
