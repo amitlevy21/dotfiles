@@ -13,6 +13,7 @@ alias \
         dts="dt status" \
         gs="git status" \
         j='cd "$(fd -t d -E go '"'.*'"' $HOME | fzf)"' \
+        jr='cd "$(fd -t d '"'.*'"' $PWD | fzf)"' \
         jg='cd "$(fd -t d -E $HOME -E /run -E /proc -E /sys -E /dev '"'.*'"' / | fzf)"' \
         jh='cd "$(fd -t d --regex '"'^\.'"' --hidden -E .cargo -E .cache -E go $HOME | fzf)"' \
         lg="lazygit" \
