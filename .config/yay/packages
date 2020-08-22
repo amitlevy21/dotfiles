@@ -6,5 +6,6 @@ neovim-nightly
 nerd-fonts-meslo
 nodejs-neovim
 oh-my-zsh-git
+rofi-git
 starship
 vim-plug-git

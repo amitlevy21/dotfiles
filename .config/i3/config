@@ -26,7 +26,7 @@ bindsym $mod+Shift+r restart
 # #---Start Applications---# #
 
 bindsym $mod+Return exec --no-startup-id $term
-bindsym $mod+r exec --no-startup-id rofi -show combi
+bindsym $mod+r exec --no-startup-id $HOME/.config/rofi/launcher.sh
 bindsym $mod+n exec --no-startup-id $term -e $file_m
 bindsym $mod+w exec --no-startup-id $brow
 
