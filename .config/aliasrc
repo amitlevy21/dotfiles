@@ -16,6 +16,7 @@ alias \
         jr='cd "$(fd -t d '"'.*'"' $PWD | fzf)"' \
         jg='cd "$(fd -t d -E $HOME -E /run -E /proc -E /sys -E /dev '"'.*'"' / | fzf)"' \
         jh='cd "$(fd -t d --regex '"'^\.'"' --hidden -E .cargo -E .cache -E go $HOME | fzf)"' \
+        jc='cd "$(fd -t d '"'.*'"' $HOME/.config| fzf)"' \
         lg="lazygit" \
         t="tmux" \
         v="vim" \
