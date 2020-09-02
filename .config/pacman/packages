@@ -11,6 +11,7 @@ dunst
 evince
 fd
 flameshot
+foliate
 fzf
 git
 gvfs
@@ -30,8 +31,8 @@ pcmanfm
 picom
 pulseaudio
 pulseaudio-bluetooth
-python-ueberzug
 python-pynvim
+python-ueberzug
 qbittorrent
 ranger
 redshift
@@ -40,8 +41,8 @@ sxiv
 thunderbird
 tmux
 unzip
-wget
 w3m
+wget
 xarchiver
 xbindkeys
 xcape
