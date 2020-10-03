@@ -6,7 +6,9 @@ let g:python_host_prog = '/usr/bin/python2'
 let g:python3_host_prog = '/usr/bin/python3'
 
 " Editor
-colorscheme base16-solarflare
+if !exists('g:vscode')
+  colorscheme base16-solarflare
+endif
 set number relativenumber
 set foldmethod=syntax
 set nofoldenable

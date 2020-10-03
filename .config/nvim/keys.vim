@@ -25,9 +25,6 @@ endfunction
 
 nnoremap <leader>0 :call Cycle_numbering()<CR>
 
-" Accidental Q when exiting should exit
-nmap Q q
-
 " D is for deleting line from cursor position to end of line as of C, so Y
 " should consist
 noremap Y y$
@@ -51,7 +48,6 @@ tnoremap <leader><Esc> <C-\><C-n>
 " Start terminal in insert mode
 au BufEnter * if &buftype == 'terminal' | :startinsert | endif
 
-" open terminal on ctrl+n
 function! OpenTerminal()
   split term://zsh
   resize 10
