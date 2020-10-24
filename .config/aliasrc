@@ -5,7 +5,7 @@ alias \
         dexe="docker exec -it" \
         dk="docker" \
         dkc="docker-compose" \
-        dt="lg --git-dir=$XDG_CONFIG_HOME/dotfiles.git/ --work-tree=$HOME" \
+        dt="/usr/bin/git --git-dir=$XDG_CONFIG_HOME/dotfiles.git/ --work-tree=$HOME" \
         dta="dt add -p" \
         dtc="dt commit" \
         dtd="dt diff" \
