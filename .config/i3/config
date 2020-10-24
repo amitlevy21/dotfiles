@@ -63,6 +63,7 @@ exec --no-startup-id nitrogen --restore; sleep 1; picom -b
 exec --no-startup-id /usr/bin/dunst
 exec --no-startup-id redshift-gtk
 exec --no-startup-id keepassxc
+exec --no-startup-id xfce4-power-manager
 
 # #---Movement & Control---# #
 
