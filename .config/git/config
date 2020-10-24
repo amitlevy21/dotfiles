@@ -3,6 +3,6 @@
 	name = Amit Levy
 
 [pull]
-	rebase = false
+    rebase = true
 [commit]
 	verbose = true
