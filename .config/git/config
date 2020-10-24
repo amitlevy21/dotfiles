@@ -1,8 +1,28 @@
 [user]
-	email = amitlevy347@gmail.com
-	name = Amit Levy
+    email = amitlevy347@gmail.com
+    name = Amit Levy
 
 [pull]
     rebase = true
+
 [commit]
-	verbose = true
+    verbose = true
+
+[diff]
+    colorMoved = default
+
+[core]
+    pager = delta
+
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    features = side-by-side line-numbers decorations
+    whitespace-error-style = 22 reverse
+    syntax-theme = Monokai Extended Origin
+
+[delta "decorations"]
+    commit-decoration-style = bold yellow box ul
+    file-style = bold yellow ul
+    file-decoration-style = none
