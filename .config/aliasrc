@@ -1,6 +1,7 @@
 #!/bin/sh
 
 alias \
+        awsl="aws --endpointurl http://localhost:4566" \
         c="clear" \
         dexe="docker exec -it" \
         dk="docker" \
