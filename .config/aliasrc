@@ -5,12 +5,7 @@ alias \
         dexe="docker exec -it" \
         dk="docker" \
         dkc="docker-compose" \
-        dt="/usr/bin/git --git-dir=$XDG_CONFIG_HOME/dotfiles.git/ --work-tree=$HOME" \
-        dta="dt add -p" \
-        dtc="dt commit" \
-        dtd="dt diff" \
-        dtp="dt push" \
-        dts="dt status" \
+        dt="lg --git-dir=$XDG_CONFIG_HOME/dotfiles.git/ --work-tree=$HOME" \
         gs="git status" \
         j='cd "$(fd -t d -E go '"'.*'"' $HOME | fzf)"' \
         jr='cd "$(fd -t d '"'.*'"' $PWD | fzf)"' \
@@ -22,7 +17,7 @@ alias \
         v="vim" \
         vim="nvim"
 
-vc() { dt ls-tree --full-tree -r HEAD --name-only | sed "s,^,$HOME/," | fzf | xargs -r $EDITOR ;}
+vc() { git --git-dir=$XDG_CONFIG_HOME/dotfiles.git/ --work-tree=$HOME ls-tree --full-tree -r HEAD --name-only | sed "s,^,$HOME/," | fzf | xargs -r $EDITOR ;}
 vf() { fzf | xargs -r $EDITOR ;}
 vfr() { fd -t f ".*" /etc | fzf | xargs -r sudoedit ;}
 
