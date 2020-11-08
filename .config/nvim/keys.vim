@@ -35,6 +35,9 @@ nnoremap <leader><leader> <C-^>
 nnoremap J :bp<CR>
 nnoremap K :bn<CR>
 
+nmap j gj
+nmap k gk
+
 nnoremap <leader>q :quit<CR>
 nnoremap <leader>w :write<CR>
 nnoremap <leader>x :xit<CR>
