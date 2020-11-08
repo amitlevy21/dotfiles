@@ -13,7 +13,7 @@ net_wired = ""
 net_wireless = ""
 net_up = ""
 net_down = ""
-music = " "
+music = ""
 
 [[block]]
 block = "music"
