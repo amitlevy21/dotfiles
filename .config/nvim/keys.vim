@@ -9,22 +9,6 @@ noremap <leader>p "+p
 xnoremap <silent> K :call mappings#visual#move_up()<CR>
 xnoremap <silent> J :call mappings#visual#move_down()<CR>
 
-" Cycle between number line modes
-function! Cycle_numbering() abort
-  if exists('+relativenumber')
-    execute {
-          \ '00': 'set relativenumber   | set number',
-          \ '01': 'set norelativenumber | set number',
-          \ '10': 'set norelativenumber | set nonumber',
-          \ '11': 'set norelativenumber | set number' }[&number . &relativenumber]
-  else
-    " No relativenumber numbering, just toggle numbers on and off.
-    set number!<CR>
-  endif
-endfunction
-
-nnoremap <leader>0 :call Cycle_numbering()<CR>
-
 " D is for deleting line from cursor position to end of line as of C, so Y
 " should consist
 noremap Y y$
@@ -80,16 +64,6 @@ nmap <leader>m :Maps<Space><CR>
 
 " Fugitive
 nmap <leader>gb :Gblame<CR>
-
-" Vimux
-" Prompt for a command to run
-map <leader>vp :VimuxPromptCommand<CR>
-" Run last command executed by VimuxRunCommand
-map <leader>vl :VimuxRunLastCommand<CR>
-" Inspect runner pane
-map <leader>vi :VimuxInspectRunner<CR><Paste>
-" Zoom the tmux runner pane
-map <leader>vz :VimuxZoomRunner<CR>
 
 " Ranger
 nnoremap <leader>r :RangerWorkingDirectory<CR>

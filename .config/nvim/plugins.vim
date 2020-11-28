@@ -40,10 +40,6 @@ if !exists('g:vscode')
   Plug 'tpope/vim-fugitive'
   Plug 'airblade/vim-gitgutter'
   Plug 'kdheepak/lazygit.nvim'
-  " Tmux
-  Plug 'christoomey/vim-tmux-navigator'
-  Plug 'edkolev/tmuxline.vim'
-  Plug 'benmills/vimux'
   " Highlight hex codes with their color
   Plug 'norcalli/nvim-colorizer.lua'
   " LSP
