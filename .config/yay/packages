@@ -1,4 +1,3 @@
-8192eu-dkms
 git-delta-bin
 google-chrome
 i3status-rust-git
@@ -10,6 +9,7 @@ nerd-fonts-meslo
 nodejs-neovim
 oh-my-zsh-git
 rofi-git
+rtl8192eu-git
 spotify
 starship-bin
 vim-plug-git
