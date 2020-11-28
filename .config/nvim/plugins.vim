@@ -17,9 +17,6 @@ if !exists('g:vscode')
   Plug 'junegunn/goyo.vim'
   " Alternate between files
   Plug 'tpope/vim-projectionist'
-  " Snippets
-  Plug 'Shougo/neosnippet.vim'
-  Plug 'Shougo/neosnippet-snippets'
   " Fuzzy finder
   Plug 'junegunn/fzf'
   Plug 'junegunn/fzf.vim'
@@ -43,11 +40,8 @@ if !exists('g:vscode')
   " Highlight hex codes with their color
   Plug 'norcalli/nvim-colorizer.lua'
   " LSP
-  Plug 'neovim/nvim-lsp'
-  Plug 'Shougo/deoplete.nvim'
-  Plug 'Shougo/deoplete-lsp'
-  Plug 'Shougo/neosnippet.vim'
-  Plug 'Shougo/neosnippet-snippets'
+  Plug 'neovim/nvim-lspconfig'
+  Plug 'nvim-lua/completion-nvim'
   " Language specific
   " Python
   Plug 'davidhalter/jedi'
@@ -62,7 +56,10 @@ endif
 call plug#end()
 
 if !exists('g:vscode')
-lua << END
-  require'nvim_lsp'.pyls.setup{}
-END
+lua require'lspconfig'.pyls.setup{on_attach=require'completion'.on_attach}
+lua require'lspconfig'.dockerls.setup{}
+lua require'lspconfig'.gopls.setup{}
+lua require'lspconfig'.jsonls.setup{}
+lua require'lspconfig'.tsserver.setup{}
+lua require'lspconfig'.yamlls.setup{}
 endif
