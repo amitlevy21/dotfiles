@@ -20,6 +20,7 @@ export GNUPGHOME="$XDG_DATA_HOME"/gnupg
 export VAGRANT_HOME="$XDG_DATA_HOME"/vagrant
 export VAGRANT_ALIAS_FILE="$XDG_DATA_HOME"/vagrant/aliases
 export DOCKER_CONFIG="$XDG_CONFIG_HOME"/docker
+export NPM_CONFIG_USERCONFIG=$XDG_CONFIG_HOME/npm/npmrc
 
 # Adds `~/.scripts` and all subdirectories to $PATH
 export PATH="$PATH:$(du "$XDG_CONFIG_HOME/scripts/" | cut -f2 | tr '\n' ':' | sed 's/:*$//')"
