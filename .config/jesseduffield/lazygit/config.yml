@@ -2,6 +2,10 @@ reporting: "off"
 startuppopupversion: 1
 
 git:
+  pull:
+    mode: rebase
   paging:
     colorArg: always
-    # pager: delta --side-by-side --line-numbers --dark --24-bit-color=never
+
+confirmOnQuit: false
+quitOnTopLevelReturn: false
