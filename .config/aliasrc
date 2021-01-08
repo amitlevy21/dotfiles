@@ -9,12 +9,13 @@ alias \
         dt="lg --git-dir=$XDG_CONFIG_HOME/dotfiles.git/ --work-tree=$HOME" \
         gs="git status" \
         j='cd "$(fd -t d -E go '"'.*'"' $HOME | fzf)"' \
-        jr='cd "$(fd -t d '"'.*'"' $PWD | fzf)"' \
+        jc='cd "$(fd -t d '"'.*'"' $HOME/.config| fzf)"' \
         jg='cd "$(fd -t d -E $HOME -E /run -E /proc -E /sys -E /dev '"'.*'"' / | fzf)"' \
         jh='cd "$(fd -t d --regex '"'^\.'"' --hidden -E .cargo -E .cache -E go $HOME | fzf)"' \
-        jc='cd "$(fd -t d '"'.*'"' $HOME/.config| fzf)"' \
+        jr='cd "$(fd -t d '"'.*'"' $PWD | fzf)"' \
         lg="lazygit" \
         lzd="lazydocker" \
+        k="kubectl" \
         t="tmux" \
         v="vim" \
         vim="nvim"
@@ -22,4 +23,6 @@ alias \
 vc() { git --git-dir=$XDG_CONFIG_HOME/dotfiles.git/ --work-tree=$HOME ls-tree --full-tree -r HEAD --name-only | sed "s,^,$HOME/," | fzf | xargs -r $EDITOR ;}
 vf() { fzf | xargs -r $EDITOR ;}
 vfr() { fd -t f ".*" /etc | fzf | xargs -r sudoedit ;}
+
+complete -F __start_kubectl k
 

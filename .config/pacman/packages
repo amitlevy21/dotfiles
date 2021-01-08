@@ -24,6 +24,8 @@ gvfs-mtp
 i3-gaps
 intel-ucode
 keepassxc
+kubectl
+kubectx
 light-locker
 lightdm
 mpv
