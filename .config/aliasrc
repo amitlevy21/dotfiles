@@ -24,5 +24,6 @@ vc() { git --git-dir=$XDG_CONFIG_HOME/dotfiles.git/ --work-tree=$HOME ls-tree --
 vf() { fzf | xargs -r $EDITOR ;}
 vfr() { fd -t f ".*" /etc | fzf | xargs -r sudoedit ;}
 
+complete -F __start_git g
 complete -F __start_kubectl k
 
