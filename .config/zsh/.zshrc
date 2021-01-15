@@ -23,7 +23,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git fzf docker docker-compose)
+plugins=(git fzf docker docker-compose kubectl last-working-dir)
 
 export ZSH_CACHE_DIR=$HOME/.cache
 source $ZSH/oh-my-zsh.sh
