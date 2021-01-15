@@ -25,6 +25,7 @@ COMPLETION_WAITING_DOTS="true"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git fzf docker docker-compose)
 
+export ZSH_CACHE_DIR=$HOME/.cache
 source $ZSH/oh-my-zsh.sh
 
 [ -f "$HOME/.config/aliasrc" ] && source "$HOME/.config/aliasrc"
