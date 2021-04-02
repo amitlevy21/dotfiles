@@ -34,6 +34,7 @@ source $ZSH/oh-my-zsh.sh
 
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$XDG_DATA_HOME/npm/bin
 export FZF_DEFAULT_COMMAND='fd --type f'
 export FZF_ALT_C_COMMAND="fd -t d . $HOME"
 
