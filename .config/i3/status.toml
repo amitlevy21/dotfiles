@@ -11,8 +11,6 @@ name = "awesome5"
 [icons.overrides]
 net_wired = ""
 net_wireless = ""
-net_up = ""
-net_down = ""
 music = ""
 
 [[block]]
@@ -27,7 +25,7 @@ max_width = 21
 [[block]]
 block = "disk_space"
 path = "/home"
-alias = ""
+format = " {available}"
 info_type = "available"
 unit = "GB"
 interval = 20
@@ -37,8 +35,7 @@ alert = 2.0
 [[block]]
 block = "memory"
 display_type = "memory"
-format_mem = "{Mup}%"
-format_swap = "{SUp}%"
+format_mem = "{mem_used_percents}"
 
 [[block]]
 block = "cpu"
@@ -47,8 +44,7 @@ interval = 1
 [[block]]
 block = "net"
 device = "wlp0s26u1u5"
-speed_up = true
-speed_down = true
+format = "{speed_up;M*b}{speed_down;M*b}"
 interval = 5
 
 [[block]]
@@ -58,3 +54,4 @@ block = "sound"
 block = "time"
 interval = 60
 format = "%a %d/%m %R"
+
