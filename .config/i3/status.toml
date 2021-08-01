@@ -44,7 +44,7 @@ interval = 1
 [[block]]
 block = "net"
 device = "wlp0s26u1u5"
-format = "{speed_up;M*b}{speed_down;M*b}"
+format = "{speed_up}{speed_down}"
 interval = 5
 
 [[block]]
