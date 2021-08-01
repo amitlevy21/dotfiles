@@ -59,7 +59,7 @@ exec_always --no-startup-id remaps
 exec_always --no-startup-id /usr/bin/light-locker --lock-on-lid --lock-on-suspend --lock-after-screensaver=1800
 exec_always --no-startup-id "pulse-volume-watcher.py | xob"
 
-exec --no-startup-id nitrogen --restore; sleep 1; picom -b
+exec --no-startup-id nitrogen --restore
 exec --no-startup-id /usr/bin/dunst
 exec --no-startup-id redshift-gtk
 exec --no-startup-id keepassxc
