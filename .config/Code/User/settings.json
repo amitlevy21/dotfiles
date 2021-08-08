@@ -91,5 +91,11 @@
   "window.titleBarStyle": "custom",
   "window.zoomLevel": 1,
   "workbench.editor.enablePreview": true,
-  "workbench.iconTheme": "vscode-great-icons"
+  "workbench.iconTheme": "vscode-great-icons",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
