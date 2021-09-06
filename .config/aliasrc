@@ -27,3 +27,5 @@ vfr() { fd -t f ".*" /etc | fzf | xargs -r sudoedit ;}
 complete -F __start_git g
 complete -F __start_kubectl k
 
+unalias gr # defined in git zsh plugin
+

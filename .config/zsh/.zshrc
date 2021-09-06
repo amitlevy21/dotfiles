@@ -61,3 +61,4 @@ fi
 
 eval "$(starship init zsh)"
 
+. <(gr completion)
