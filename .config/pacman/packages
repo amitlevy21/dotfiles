@@ -6,6 +6,7 @@ awesome-terminal-fonts
 base
 base-devel
 bat
+bandwhich
 blueman
 code
 curl
@@ -13,12 +14,14 @@ docker
 docker-compose
 dunst
 evince
+exa
 fd
 firefox
 flameshot
 foliate
 fzf
 git
+git-delta
 go
 gvfs
 gvfs-mtp
@@ -50,6 +53,8 @@ redshift
 reflector
 ripgrep
 rust
+starship
+sd
 sxiv
 ueberzug
 unzip

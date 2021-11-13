@@ -1,7 +1,6 @@
 8192eu-dkms-git
 aconfmgr-git
 brave-bin
-git-delta-bin
 google-chrome
 i3status-rust
 lazydocker
@@ -14,4 +13,4 @@ oh-my-zsh-git
 python-pulsectl
 rofi-git
 spotify
-starship-bin
+ytop-bin
