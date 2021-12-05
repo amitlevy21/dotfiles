@@ -6,6 +6,7 @@ git:
     mode: rebase
   paging:
     colorArg: always
+    pager: delta --dark --paging=never --24-bit-color=never
 
 confirmOnQuit: false
 quitOnTopLevelReturn: false
