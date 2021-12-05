@@ -16,7 +16,6 @@ alias \
         lg="lazygit" \
         lzd="lazydocker" \
         k="kubectl" \
-        t="tmux" \
         v="vim" \
         vim="nvim"
 

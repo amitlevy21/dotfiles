@@ -3,10 +3,10 @@ alsa-utils
 android-tools
 ansible
 awesome-terminal-fonts
+bandwhich
 base
 base-devel
 bat
-bandwhich
 blueman
 code
 curl
@@ -26,12 +26,15 @@ go
 gvfs
 gvfs-mtp
 i3-gaps
+i3status-rust
 intel-ucode
 keepassxc
 kubectl
 kubectx
+lazygit
 light-locker
 lightdm
+lightdm-slick-greeter
 mpv
 neovim
 networkmanager
@@ -54,8 +57,8 @@ redshift
 reflector
 ripgrep
 rust
-starship
 sd
+starship
 sxiv
 ueberzug
 unzip
